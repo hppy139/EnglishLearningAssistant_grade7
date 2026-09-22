@@ -1,0 +1,507 @@
+{
+  "unit": "aU8",
+  "book": "七上",
+  "source": "七上教材 PDF p6-89",
+  "items": [
+    {
+      "kind": "semi_open",
+      "text": "When is your birthday?",
+      "page": 66,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU8_x001",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "May on June 3rd.",
+      "page": 66,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU8_x002",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "When is your father’s birthday?",
+      "page": 67,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU8_x003",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Thank you, Bill.",
+      "page": 67,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU8_x004",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "So, how old are you, Alan?",
+      "page": 67,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU8_x005",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’m twelve.",
+      "page": 67,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU8_x006",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "How old are you?",
+      "page": 67,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU8_x007",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’m thirteen.",
+      "page": 67,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU8_x008",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My birthday is in August.",
+      "page": 67,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU8_x009",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "When is it?",
+      "page": 67,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU8_x010",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "At three this afternoon.",
+      "page": 67,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU8_x011",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My birthday is on May 2nd.",
+      "page": 68,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU8_x012",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "When is his birthday?",
+      "page": 68,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU8_x013",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "His birthday is on January 17th.",
+      "page": 68,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU8_x014",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "When is her birthday?",
+      "page": 68,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU8_x015",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s in August.",
+      "page": 68,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU8_x016",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "When is Alice’s birthday?",
+      "page": 68,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU8_x017",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Her birthday is on September 5th.",
+      "page": 68,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU8_x018",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "His birthday is on April 21st.",
+      "page": 68,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU8_x019",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "When is Jenny’s birthday?",
+      "page": 68,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU8_x020",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "No, it’s on the 6th.",
+      "page": 68,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU8_x021",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "When are their birthdays?",
+      "page": 68,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU8_x022",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Her birthday is on May 24th.",
+      "page": 68,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU8_x023",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "When is your brother’s birthday?",
+      "page": 68,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU8_x024",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Is his birthday in July?",
+      "page": 68,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU8_x025",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Their birthdays are in January.",
+      "page": 68,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU8_x026",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Is your birthday on February 1st?",
+      "page": 68,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU8_x027",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s on June 16th.",
+      "page": 68,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU8_x028",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "How are you, Grace?",
+      "page": 68,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU8_x029",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "And is your birthday?",
+      "page": 68,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU8_x030",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My is on March 12th.",
+      "page": 68,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU8_x031",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "How about you and Tom?",
+      "page": 68,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU8_x032",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "John’s calendar.",
+      "page": 69,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU8_x033",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "We have some interesting and fun things for you this term.",
+      "page": 70,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU8_x034",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "October is a great month.",
+      "page": 70,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU8_x035",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "School Day is on October 22nd.",
+      "page": 70,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU8_x036",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s on November 3rd.",
+      "page": 70,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU8_x037",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "English party on November 30th.",
+      "page": 70,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU8_x038",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "This is a really busy term!",
+      "page": 70,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU8_x039",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Have a good time!",
+      "page": 70,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU8_x040",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "What other activities do you like?",
+      "page": 70,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU8_x041",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "When is your birthday? We have some interesting and fun things for you this term. October is a great month.",
+      "page": 70,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU8_x042",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Do you sports?",
+      "page": 71,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU8_x043",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "See you there!",
+      "page": 71,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU8_x044",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Invite ·What is your friend’s name?",
+      "page": 71,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU8_x045",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "When is Children’s Day ( )?",
+      "page": 71,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU8_x046",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "When is National Day ( )?",
+      "page": 71,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU8_x047",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "When is Women’s Day ( )?",
+      "page": 71,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU8_x048",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "When is New Year’s Day ( )?",
+      "page": 71,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU8_x049",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Do you sports? See you there! Invite ·What is your friend’s name? When is Children’s Day ( )? When is National Day ( )?",
+      "page": 71,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU8_x050",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    }
+  ]
+}

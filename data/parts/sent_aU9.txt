@@ -1,0 +1,2 @@
+What's your favorite subject? My favorite subject is science.|你最喜欢的科目是什么？我最喜欢科学。
+Why do you like it? Because it's fun.|你为什么喜欢它？因为它有趣。

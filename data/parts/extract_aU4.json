@@ -1,0 +1,1027 @@
+{
+  "unit": "aU4",
+  "book": "七上",
+  "source": "七上教材 PDF p6-89",
+  "items": [
+    {
+      "kind": "semi_open",
+      "text": "Where’s my schoolbag?",
+      "page": 42,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU4_x001",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Where are my books?",
+      "page": 42,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x002",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Where’s my pencil box?",
+      "page": 42,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU4_x003",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Where’s my computer game?",
+      "page": 42,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU4_x004",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Where’s the schoolbag?",
+      "page": 42,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU4_x005",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s under the table.",
+      "page": 42,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x006",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Where’s my schoolbag? Where are my books? Where’s my pencil box? Where’s my computer game? Where’s the schoolbag?",
+      "page": 42,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU4_x007",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Are the keys on the sofa?",
+      "page": 43,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU4_x008",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "They’re on the table.",
+      "page": 43,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x009",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Come on, Jack!",
+      "page": 43,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU4_x010",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Where’s my bag?",
+      "page": 43,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x011",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "And it’s not under the chair.",
+      "page": 43,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x012",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s on the sofa.",
+      "page": 43,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x013",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Thank you, Mom.",
+      "page": 43,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x014",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I think it’s in your grandparents’ room.",
+      "page": 43,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU4_x015",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Yes, it’s on their bed!",
+      "page": 43,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x016",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "And my hat?",
+      "page": 43,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x017",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s on your head!",
+      "page": 43,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x018",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Where’s the map?",
+      "page": 44,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x019",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s in your grandparents’ room.",
+      "page": 44,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU4_x020",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "They’re on the sofa.",
+      "page": 44,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU4_x021",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Where’s his pencil box?",
+      "page": 44,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU4_x022",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s in his schoolbag.",
+      "page": 44,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU4_x023",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Where’s your ruler?",
+      "page": 44,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x024",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s under the chair.",
+      "page": 44,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x025",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Where are their keys?",
+      "page": 44,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU4_x026",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "They’re the desk?",
+      "page": 44,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x027",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I don’t know.",
+      "page": 44,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x028",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s on the table.",
+      "page": 44,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x029",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Where are Tom’s things?",
+      "page": 45,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU4_x030",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "The English books are under the radio.",
+      "page": 45,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU4_x031",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Is Gina tidy?",
+      "page": 46,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x032",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Is Kate tidy?",
+      "page": 46,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU4_x033",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’m Kate, and my sister is plane is hers.",
+      "page": 46,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU4_x034",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’m tidy, but Gina desk.",
+      "page": 46,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x035",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "In our room, my Where’s my ruler?",
+      "page": 46,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x036",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My keys are in my asks.",
+      "page": 46,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x037",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I have a clock.",
+      "page": 46,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x038",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Is Gina tidy? I’m Kate, and my sister is plane is hers. I’m tidy, but Gina desk.",
+      "page": 46,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU4_x039",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "In our room, my Where’s my ruler? My keys are in my asks. I have a clock.",
+      "page": 46,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU4_x040",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Do you have these things?",
+      "page": 47,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU4_x041",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Where are they?",
+      "page": 47,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU4_x042",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My dictionary and my radio are on the desk.",
+      "page": 47,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU4_x043",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My pencil box is in my schoolbag and my schoolbag is under the desk.",
+      "page": 47,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU4_x044",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "The tape player is on the teacher’s desk.",
+      "page": 47,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU4_x045",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Do you have these things? Where are they? My dictionary and my radio are on the desk. My pencil box is in my schoolbag and my schoolbag is under the desk. The tape player is on the teacher’s desk.",
+      "page": 47,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU4_x046",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Hurry up, David!",
+      "page": 82,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU4_x047",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’m Kate, and my sister is Gina.",
+      "page": 82,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU4_x048",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’m tidy, but Gina is not.",
+      "page": 82,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x049",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "We’re here, and you’re there.",
+      "page": 82,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU4_x050",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "The book’s good, but not that good.",
+      "page": 82,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x051",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Gina’s books are everywhere on her bed, on the sofa and under the chair.",
+      "page": 82,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU4_x052",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Let’s ask./Let’s play computer games.",
+      "page": 82,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU4_x053",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Please let your little brother play.",
+      "page": 82,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU4_x054",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "I’m Kate, and my sister is Gina. I’m tidy, but Gina is not. We’re here, and you’re there.",
+      "page": 82,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU4_x055",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "The book’s good, but not that good. Gina’s books are everywhere on her bed, on the sofa and under the chair. Hey, Helen, let’s go!",
+      "page": 82,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU4_x056",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I think he has a ping-pong ball, too.",
+      "page": 83,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU4_x057",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I think he’s your brother.",
+      "page": 83,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU4_x058",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "You can play soccer, I think.",
+      "page": 83,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU4_x059",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "That sounds interesting.",
+      "page": 83,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU4_x060",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I don’t have a soccer ball, but my brother Alan does.",
+      "page": 83,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU4_x061",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "We play it at school with our friends.",
+      "page": 83,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU4_x062",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Now I’m with my father at home.",
+      "page": 83,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU4_x063",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Can you go with us?",
+      "page": 83,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU4_x064",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Computer is difficult for my grandparents, but it’s really easy for me.",
+      "page": 83,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU4_x065",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Sports are good for you, for him and for her for all of us!",
+      "page": 83,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU4_x066",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "I think he has a ping-pong ball, too. I think he’s your brother. You can play soccer, I think.",
+      "page": 83,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU4_x067",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "That sounds good. That sounds interesting. I don’t have a soccer ball, but my brother Alan does.",
+      "page": 83,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU4_x068",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Let me think about it.",
+      "page": 84,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU4_x069",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "So what fruit do you like?",
+      "page": 84,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x070",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "What color do you like?",
+      "page": 84,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU4_x071",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I don’t want to be fat.",
+      "page": 84,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x072",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Do you want to be a teacher?",
+      "page": 84,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU4_x073",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I don’t want to be old!",
+      "page": 84,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x074",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "What do you have for breakfast?",
+      "page": 84,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU4_x075",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "We often eat rice for lunch.",
+      "page": 84,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x076",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "What do you need for your party?",
+      "page": 84,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU4_x077",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "We need some color pencils for this afternoon’s English class.",
+      "page": 84,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU4_x078",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "What color do you like? I don’t want to be fat. Do you want to be a teacher?",
+      "page": 84,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU4_x079",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "I don’t want to be old! What do you have for breakfast? We often eat rice for lunch.",
+      "page": 84,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU4_x080",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "That man looks old, but he’s not that old.",
+      "page": 85,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x081",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "These shoes look nice on you.",
+      "page": 85,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x082",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Two dollars for one pair and three dollars for two pairs.",
+      "page": 85,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU4_x083",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s 30 yuan for this book.",
+      "page": 85,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x084",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "How much is it for two?",
+      "page": 85,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU4_x085",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Come and buy your clothes at our great sale!",
+      "page": 85,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU4_x086",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Come and see us.",
+      "page": 85,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU4_x087",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Please come and have dinner with us.",
+      "page": 85,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU4_x088",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Let’s go to Huaxing Clothes Store this evening they’re on sale.",
+      "page": 85,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU4_x089",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "We sell all our clothes at very good prices.",
+      "page": 85,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU4_x090",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "That store sells things at high prices but they’re really good.",
+      "page": 85,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU4_x091",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "That man looks old, but he’s not that old. These shoes look nice on you. Two dollars for one pair and three dollars for two pairs.",
+      "page": 85,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU4_x092",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "It’s 30 yuan for this book. How much is it for two? Come and buy your clothes at our great sale!",
+      "page": 85,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU4_x093",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Come and see us. Please come and have dinner with us. Let’s go to Huaxing Clothes Store this evening they’re on sale.",
+      "page": 85,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU4_x094",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "See you later.",
+      "page": 86,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU4_x095",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "See you this afternoon/evening.",
+      "page": 86,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU4_x096",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "See you soon.",
+      "page": 86,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU4_x097",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "See you then.",
+      "page": 86,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU4_x098",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "See you tomorrow.",
+      "page": 86,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU4_x099",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I find this book interesting.",
+      "page": 86,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU4_x100",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "This game looks fun.",
+      "page": 86,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU4_x101",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "We have some interesting and fun things for you this term. I find this book interesting. This game looks fun.",
+      "page": 86,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU4_x102",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    }
+  ]
+}

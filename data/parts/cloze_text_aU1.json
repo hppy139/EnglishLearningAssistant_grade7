@@ -1,0 +1,192 @@
+[
+  {
+    "kind": "cloze",
+    "text": "Nice ___ meet you, Linda.",
+    "answer": "to",
+    "accept": [
+      "to",
+      "to"
+    ],
+    "options": [
+      "to",
+      "on",
+      "in",
+      "under"
+    ],
+    "grammar_point": "介词 in/on/under",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 to（介词 in/on/under）。",
+    "id": "aU1_c00",
+    "unit_id": "aU1",
+    "unit_name": "Unit 1 My name's Gina.",
+    "book": "七上",
+    "source_sentence": "Nice to meet you, Linda.",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "choice",
+    "text": "___ school ID card, please.",
+    "answer": "Your",
+    "accept": [
+      "Your",
+      "your"
+    ],
+    "options": [
+      "my",
+      "your",
+      "his",
+      "her"
+    ],
+    "grammar_point": "形容词性物主代词",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 Your（形容词性物主代词）。",
+    "id": "aU1_c01",
+    "unit_id": "aU1",
+    "unit_name": "Unit 1 My name's Gina.",
+    "book": "七上",
+    "source_sentence": "Your school ID card, please.",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "cloze",
+    "text": "Here ___ some of my friends.",
+    "answer": "are",
+    "accept": [
+      "are",
+      "are"
+    ],
+    "options": [
+      "is",
+      "am",
+      "are"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 are（be动词 am/is/are）。",
+    "id": "aU1_c02",
+    "unit_id": "aU1",
+    "unit_name": "Unit 1 My name's Gina.",
+    "book": "七上",
+    "source_sentence": "Here are some of my friends.",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "cloze",
+    "text": "___ you spell it, please?",
+    "answer": "Can",
+    "accept": [
+      "Can",
+      "can"
+    ],
+    "options": [],
+    "grammar_point": "情态动词 can",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 Can（情态动词 can）。",
+    "id": "aU1_c03",
+    "unit_id": "aU1",
+    "unit_name": "Unit 1 My name's Gina.",
+    "book": "七上",
+    "source_sentence": "Can you spell it, please?",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "cloze",
+    "text": "___ you know how to spell it?",
+    "answer": "Do",
+    "accept": [
+      "Do",
+      "do"
+    ],
+    "options": [],
+    "grammar_point": "一般现在时 do/does",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 Do（一般现在时 do/does）。",
+    "id": "aU1_c04",
+    "unit_id": "aU1",
+    "unit_name": "Unit 1 My name's Gina.",
+    "book": "七上",
+    "source_sentence": "Do you know how to spell it?",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "choice",
+    "text": "Nice ___ meet you, too.",
+    "answer": "to",
+    "accept": [
+      "to",
+      "to"
+    ],
+    "options": [
+      "to",
+      "on",
+      "in",
+      "under"
+    ],
+    "grammar_point": "介词 in/on/under",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 to（介词 in/on/under）。",
+    "id": "aU1_c05",
+    "unit_id": "aU1",
+    "unit_name": "Unit 1 My name's Gina.",
+    "book": "七上",
+    "source_sentence": "Nice to meet you, too.",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "cloze",
+    "text": "___ name’s Her name’s Linda.",
+    "answer": "My",
+    "accept": [
+      "My",
+      "my"
+    ],
+    "options": [
+      "his",
+      "her",
+      "my",
+      "your"
+    ],
+    "grammar_point": "形容词性物主代词",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 My（形容词性物主代词）。",
+    "id": "aU1_c06",
+    "unit_id": "aU1",
+    "unit_name": "Unit 1 My name's Gina.",
+    "book": "七上",
+    "source_sentence": "My name’s Her name’s Linda.",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "choice",
+    "text": "My name ___ Jenny Green.",
+    "answer": "is",
+    "accept": [
+      "is",
+      "is"
+    ],
+    "options": [
+      "are",
+      "am",
+      "is"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 is（be动词 am/is/are）。",
+    "id": "aU1_c07",
+    "unit_id": "aU1",
+    "unit_name": "Unit 1 My name's Gina.",
+    "book": "七上",
+    "source_sentence": "My name is Jenny Green.",
+    "origin": "教材原句挖空（规则）",
+    "verified": true,
+    "verify_reason": "My name is Jenny Green 语法正确，be动词用is，且选项唯一。"
+  }
+]

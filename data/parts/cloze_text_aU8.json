@@ -1,0 +1,155 @@
+[
+  {
+    "kind": "cloze",
+    "text": "So, how old ___ you, Alan?",
+    "answer": "are",
+    "accept": [
+      "are",
+      "are"
+    ],
+    "options": [
+      "are",
+      "is",
+      "am"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 are（be动词 am/is/are）。",
+    "id": "aU8_c00",
+    "unit_id": "aU8",
+    "unit_name": "Unit 8 When is your birthday?",
+    "book": "七上",
+    "source_sentence": "So, how old are you, Alan?",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "choice",
+    "text": "My birthday ___ in August.",
+    "answer": "is",
+    "accept": [
+      "is",
+      "is"
+    ],
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 is（be动词 am/is/are）。",
+    "id": "aU8_c01",
+    "unit_id": "aU8",
+    "unit_name": "Unit 8 When is your birthday?",
+    "book": "七上",
+    "source_sentence": "My birthday is in August.",
+    "origin": "教材原句挖空（规则）",
+    "verified": true,
+    "verify_reason": "主语My birthday为单数，填is后句子语法正确、语义通顺，are/am均不能用。"
+  },
+  {
+    "kind": "cloze",
+    "text": "___ about you and Tom?",
+    "answer": "How",
+    "accept": [
+      "How",
+      "how"
+    ],
+    "options": [
+      "where",
+      "what",
+      "how",
+      "who"
+    ],
+    "grammar_point": "疑问词 what/who/where/how much",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 How（疑问词 what/who/where/how much）。",
+    "id": "aU8_c02",
+    "unit_id": "aU8",
+    "unit_name": "Unit 8 When is your birthday?",
+    "book": "七上",
+    "source_sentence": "How about you and Tom?",
+    "origin": "教材原句挖空（规则）",
+    "verified": false,
+    "verify_reason": "How about...?与What about...?均为固定句型，两句都通顺，选项不唯一（what同样正确）。"
+  },
+  {
+    "kind": "choice",
+    "text": "No, it’s ___ the 6th.",
+    "answer": "on",
+    "accept": [
+      "on",
+      "on"
+    ],
+    "options": [
+      "at",
+      "in",
+      "under",
+      "on"
+    ],
+    "grammar_point": "介词 in/on/under",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 on（介词 in/on/under）。",
+    "id": "aU8_c03",
+    "unit_id": "aU8",
+    "unit_name": "Unit 8 When is your birthday?",
+    "book": "七上",
+    "source_sentence": "No, it’s on the 6th.",
+    "origin": "教材原句挖空（规则）",
+    "verified": true,
+    "verify_reason": "具体日期前用介词on，it's on the 6th正确，at/in/under均不用于此语境。"
+  },
+  {
+    "kind": "cloze",
+    "text": "We have some interesting and fun things ___ you this term.",
+    "answer": "for",
+    "accept": [
+      "for",
+      "for"
+    ],
+    "options": [
+      "in",
+      "on",
+      "under",
+      "for"
+    ],
+    "grammar_point": "介词 in/on/under",
+    "level": 2,
+    "zh": "",
+    "hint": "这里要用 for（介词 in/on/under）。",
+    "id": "aU8_c04",
+    "unit_id": "aU8",
+    "unit_name": "Unit 8 When is your birthday?",
+    "book": "七上",
+    "source_sentence": "We have some interesting and fun things for you this term.",
+    "origin": "教材原句挖空（规则）",
+    "verified": true,
+    "verify_reason": "have sth. for sb.表示“为某人准备某事”，填for后语义通顺，其余介词不合。"
+  },
+  {
+    "kind": "cloze",
+    "text": "What other activities ___ you like?",
+    "answer": "do",
+    "accept": [
+      "do",
+      "do"
+    ],
+    "options": [],
+    "grammar_point": "一般现在时 do/does",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 do（一般现在时 do/does）。",
+    "id": "aU8_c05",
+    "unit_id": "aU8",
+    "unit_name": "Unit 8 When is your birthday?",
+    "book": "七上",
+    "source_sentence": "What other activities do you like?",
+    "origin": "教材原句挖空（规则）",
+    "verified": true,
+    "verify_reason": "主语activities为复数，一般现在时疑问句用助动词do，句子正确。"
+  }
+]

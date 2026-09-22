@@ -1,0 +1,454 @@
+# 七年级英语AI学习助手
+
+面向人教版 **Go for it! 七年级**的英语学习与薄弱点训练闭环：
+
+> 教材 → 语料 + RAG → 组定级卷 → 语音评测 → 多维画像 → 大模型报告 → 针对性练习 → 练习结果回流，再出一组
+
+三种能力叠在一起：
+
+- **评测**：驰声MCP语音评测, 按题型固定工具链.
+- **诊断**：4 维口语画像 + 语法画像 + **音素级对齐** (错读 / 漏读 / 多读 / 发音不到位).
+- **推荐**：从教材语料里检索候选, 由大模型在候选内挑题并写针对性理由; 薄弱知识点题量不足时按知识点补题.
+
+---
+
+## 一、整体流程
+
+```
+英语电子课本 PDF
+  ├─ 目录 / 词表 / 句型 / 短文 / 问答 ── scripts/build_corpus.py ──▶ data/seed_grade7.json
+  ├─ 逐页文本（七上文本层）── scripts/build_rag.py ──▶ data/rag/chunks.jsonl（BM25） # 目前实际是用chatgpt解析pdf文档所得
+  └─ 语法题：大模型按教材生成 + 三重校验 ──▶ data/parts/grammar_*.json
+                                            data/gen_cache/point_*.json（题量不足时补题）
+        │
+        ▼
+【定级测评】 POST /api/session  组卷
+  单词（含高价值易错音素） + 拼读 + 跟读 2 句 + 应答 1 题 + 段落 1 段 + 填空 2 + 选择 1
+        │
+        ▼  逐题作答
+  ┌─ 口语题 ─▶ 音频统一转 16k 单声道 mp3 ─▶ 驰声 MCP（工具链 + 降级 + 熔断）
+  └─ 语法题 ─▶ app/grammar.judge 本地规则判分（不调驰声）
+        │
+        ▼
+  scoring.summarize()   单题归一化：维度分 + 音素对齐（错读 / 漏读 / 多读 / 不到位）
+        │
+        ▼
+  scoring.aggregate()   整体画像：4 维 + 语法画像 + 弱音素 + 错读替代对 + 弱词
+        │
+        ▼
+【报告】 POST /api/session/{sid}/report
+  ├─ 文字分析：大模型 conclusion / evidence / action（失败自动退回规则模板，用 source 标注）
+  └─ 练习推荐：规则检索候选 ─▶ 大模型在候选内挑题 ─▶ 补理由、教材出处
+        │
+        ▼
+【练习页】做题 ─▶ 评测结果回写会话（practice_results）
+        │
+        ▼
+【再来一组】 POST /api/session/{sid}/next-round
+  用「定级 + 已练」全部历史重算画像 ─▶ 排除已考/已练的题 ─▶ 出一组新题（轮次 +1）
+```
+
+---
+
+## 二、数据层
+
+### 2.1 教材语料
+
+| 来源 | 内容 | 产物 |
+| --- | --- | --- |
+| 七上 PDF（有文本层） | 词表、句型、短文、问答、选择 | `data/parts/*.txt` → `data/seed_grade7.json` |
+| 教材目录 Target Language | 24 单元句型 / 短文 / 问答 | 同上 |
+| 语法题 | 大模型按教材生成 + 本地三重校验 | `data/parts/grammar_<unit>.json` |
+| 题量补足 | 按知识点补题 | `data/gen_cache/point_<知识点>.json` |
+
+构建与查看：
+
+```bash
+python scripts/build_corpus.py      # 教材抽取产物 → data/seed_grade7.json
+curl localhost:8080/api/health      # 看题库题数、RAG 切片数
+```
+
+> 语料加载优先读 `data/grade7_corpus.json`（若存在，含爬取），否则回退 `data/seed_grade7.json`，见 `corpus.load_corpus()`。
+
+### 2.2 RAG（教材切片）
+
+- `scripts/build_rag.py` 把 PDF 逐页切片写入 `data/rag/chunks.jsonl`，每条带 `book / unit / page`；
+- 目前实际是用chatgpt解析pdf文档所得
+- 检索默认走 **BM25-lite**（纯标准库实现，零额外依赖）；若配置了 `EMBEDDING_API_KEY`，会自动切换成向量检索（余弦相似度），见 `app/rag.py`；
+- 用途：给语法题生成提供教材原文、给推荐题补「教材出处」`ref`。
+
+```bash
+python scripts/build_rag.py                       # 七上文本层
+
+curl 'localhost:8080/api/rag/search?q=guitar%20club&top_k=3'
+curl localhost:8080/api/rag/stats
+```
+
+### 2.3 语法题（填空 / 选择）
+
+两类题型，语料里的 `kind` 分别是 `cloze`（填空，题干含 `___`）和 `choice`（选择题，带 `options`）：
+
+| 脚本 | 作用 |
+| --- | --- |
+| `scripts/gen_grammar_items.py` | 按**单元**生成：RAG 取该单元教材原文 → 大模型只基于原文出题 → 结构 / 知识点受控表 / 超纲词汇三重校验 |
+| `scripts/make_cloze.py` | 生成填空/选择题的补充通道 |
+| `scripts/verify_items.py` | 大模型复核题目质量（写 `verified`、`verify_reason`），未通过的题不参与推荐 |
+| `scripts/topup_grammar.py` | 按**知识点**补题：某知识点题量不足时批量补齐（见 §六.4） |
+
+知识点受控表在 `app/grammar.py: GRAMMAR_POINTS`（18 个），聚合与推荐都靠它，避免自由文本把画像打散。
+
+---
+
+## 三、评测层：题型 → 工具链
+
+`app/tools.py: CHAINS` 按题型固定优先级链，**失败自动降级**（按顺序试下一个工具）：
+
+| 语料类型 `kind` | 链路类型 | 工具优先级（左优先） | 判分方式 |
+| --- | --- | --- | --- |
+| `word` 单词 | `word` | `en_word_correction` → `en_word_eval` | 驰声 |
+| `word_pair` 配对词 | `word_pair` | `en_word_eval` → `en_word_correction` | 驰声 |
+| `sentence` 跟读 | `sentence` | `en_sentence_correction` → `en_sentence_eval` | 驰声 |
+| `semi_open` 应答 | `sentence_answer` | `en_semi_open_eval` → `en_sentence_correction` → `en_sentence_eval` | 驰声 |
+| `paragraph` 段落 | `paragraph` | `en_paragraph_eval` | 驰声 |
+| `oral_choice` 口语选择 | `choice` | `en_choice_eval` | 驰声 |
+| `cloze` / `choice` 语法 | `rule` | — | **本地规则判分**（`app/grammar.judge`） |
+
+三条必须知道的工程约束：
+
+1. **音频统一转 16k 单声道 mp3 再 base64**。实测：同一段真实语音，`wav base64` 会让驰声内核卡到 90 秒超时，`mp3 base64` 0.7 秒出分。转换在 `app/audio.py`，失败时降级为原格式。
+2. **`en_semi_open_eval` 的 `ref_text` 必须是 JSON 字符串**：`json.dumps({"lm": [{"text": "参考答案"}]})`，用 Python repr（单引号）会触发 `51000 start the core unsuccessfully`。
+3. **core 熔断**：某个工具失败后进入 300 秒冷却（`tools.COOLDOWN`），冷却期内直接跳过，避免每题都白等一次超时；`/api/health` 的 `cores` 字段可看熔断状态。
+
+另外，纠音类工具只给纠音结果、不给维度分时，会自动用链上的 `en_word_eval` / `en_sentence_eval` 补一次维度分（`fill_dims`），**补维度时只合并维度字段，不覆盖纠音产生的对齐数据**。
+
+---
+
+## 四、评分与画像
+
+### 4.1 四维 + 语法
+
+`app/scoring.py: summarize()` 把驰声原始返回归一化成统一结构：
+
+| 维度 | 取值来源 | 原始满分 |
+| --- | --- | --- |
+| 发音准确 | `multi_dim.pron` / `accuracy·pron` / `phonics[]` | 4 或 100 |
+| 流利度 | `multi_dim.flu` / `fluency.overall` | 3 或 100 |
+| 完整度 | `integrity` | 100 |
+| 内容命中 | `multi_dim.cnt` | 10 |
+| 语法（单独统计） | 本地判分 0 / 60 / 100 | 100 |
+
+各量程先归一到百分比再聚合；**内容未命中（`cnt = 0`）的题不计入发音 / 流利 / 完整度**（避免答非所问污染发音诊断）；语法分不计入口语总分。
+
+### 4.2 音素级对齐
+
+`en_word_correction` / `en_sentence_correction` 会返回音素对齐表（`details[].phone[] = {lab, rec, score}`，`#` 表示空）。`scoring` 按词比对判定：
+
+| 判定 | `lab` | `rec` | 展示 |
+| --- | --- | --- | --- |
+| `correct` | 有 | 与 `lab` 相同（且分 ≥ 60） | 读对 |
+| `mispron` 错读 | 有 | 有但不相同 | `/θ/` 读成了 `/s/` |
+| `missing` 漏读 | 有 | 空 | `/iː/` 漏读 |
+| `addition` 多读 | 空 | 有 | 多读了 `/ə/` |
+| `weak` 发音不到位 | 有 | 与 `lab` 相同但分 < 60 | 识别对了但质量差 |
+
+比对前会去掉重音 / 音节点（`ˈ ˌ .`）并统一小写，避免 `ˈæ` 与 `æ` 被误判成错读。
+
+### 4.3 聚合画像（`aggregate()`）
+
+| 字段 | 含义 |
+| --- | --- |
+| `dims` / `weakest_dim` | 四个维度的平均分与最弱维度 |
+| `overall` / `level` | 口语总分与档位（语法题不计入） |
+| `weak_phonemes` | 弱音素，每条带 `kinds_text`（`错读×1、漏读×1`）、`misread_text`（`常读成 /s/`）、出现的词、练法 `tip` |
+| `error_profile` | `错读 / 漏读 / 多读 / 发音不到位` 各多少处 |
+| `sound_confusions` | 典型替代对：`/θ/ → /s/`（×N） |
+| `weak_words` | 需要巩固的词 + 该词具体错在哪几类 |
+| `grammar_profile` | 每个知识点的 `total / correct / rate / wrong_as`（`has → have`）+ `last_correct` |
+| `weak_grammar` | **最近一次仍做错**的知识点（降序：正确率低、错得多） |
+| `mastered_grammar` | 最近一次答对（已过关）的知识点 |
+
+> `weak_grammar` 只看「最近一次」而不是「历史上错过一次就永久算薄弱」——否则学生答对后仍会被反复推同一个知识点。
+
+---
+
+## 五、报告怎么生成
+
+`POST /api/session/{sid}/report` 返回两部分：`analysis`（文字）与 `practice`（推荐题）。
+
+**文字分析**由 `llm.analyze` 产出 `conclusion / evidence / action`，提示词要求引用具体分数、音素或 `weak_grammar` 里的知识点，动作要含时长与验收。大模型不可用、调用失败或返回为空时，退回 `session._rule_report()` 的规则模板。
+
+来源用 `analysis.source` 标注，**前端目前不展示**，排查时可在浏览器控制台看：
+
+```js
+state.report.analysis.source            // "llm" 或 "rule"
+state.report.analysis.conclusion        // 结论原文
+```
+
+调用失败原因会留在服务日志与 `/api/health` 的 `llm_last_error`（不会再"无声降级"）：
+
+```bash
+grep -a "\[LLM\]" /tmp/uvicorn.log | tail
+curl -s localhost:8080/api/health | python3 -c "import sys,json;print(json.load(sys.stdin)['llm_last_error'])"
+```
+
+**推荐题**见下一节。
+
+---
+
+## 六、练习推荐（闭环核心）
+
+`session.recommend_groups()` 是两段式：**规则检索出候选 → 大模型在候选里挑**。
+
+### 6.1 候选怎么来（`corpus.recommend_pool`）
+
+| 栏位 | 选题规则 |
+| --- | --- |
+| 单词 | ① 错读音素 → **最小对立对**（`/θ/→/s/` 就配「含 θ 的词 + 含 s 的词」）；② 弱音素命中的教材词（错读给纠音理由、漏读给补漏理由）；③ 无弱音素时用高价值音素词兜底 |
+| 句子 | 含弱音素的句子优先，其余按词数从短到长；最弱维度含「内容命中」时追加 1 道应答题 |
+| 段落 | 固定 1 段，含弱音素优先 |
+| 语法 | 见 §6.3 |
+
+**音素匹配**靠两件事：题目自带 `phones` 标注（若有）或 `phonemes.guess_phones()` 的近似 G2P；`matches_phoneme()` 按拼写反查。两个已修的精度问题：
+
+- `th` 不能一律当 `/θ/`：`this / that / the / mother` 等高频词实际读 `/ð/`，用 `D_TH_WORDS` 词表分流，否则 `/θ/` 读不准的学生会被推一堆 `/ð/` 词（方向完全反了）；
+- 句子 / 段落必须**逐词**推断音素，整串拼接会丢掉词边界。
+
+### 6.2 大模型挑题（`llm.recommend`）
+
+- **只能从 `candidates` 里挑 `id`**，返回的 id 不在候选内一律丢弃 → 保证不会出现超纲或自造题目；
+- 候选全部来自教材语料，已排除本次考过 / 练过的题；
+- 提示词要求：优先纠 `error_profile` / `sound_confusions` 里的具体错误，难度贴近当前水平，最多挑 `word ≤3、sentence ≤3、grammar ≤3、paragraph ≤1`，`reason` 要点名音素或知识点；
+- 大模型没挑的栏位由规则候选补足，保证每栏不空；整体失败时全部回退规则路径。
+
+每道题带 `source` 字段：`llm`（大模型挑的）/ `rule`（规则补足），可用于核对。
+
+### 6.3 语法栏选点：薄弱优先 + 已掌握降频
+
+`corpus._pick_grammar()` 用权重决定抽中概率（不是"答对就再不出现"）：
+
+| 知识点状态 | 权重 |
+| --- | --- |
+| 最近仍做错（`weak_grammar`） | 10.0 |
+| 没测过 | 3.0 |
+| 曾错、最近答对（半掌握） | 2.5 |
+| 一直答对 | 1.0 |
+
+搭配两条规则：薄弱点先占名额（最多 `limit-1` 题，保证每轮至少留 1 题做复习/巩固）；剩余名额按权重加权随机——权重低的点概率小但不为 0，对应「降低频次，但不要不出现」。
+
+### 6.4 题量不足时补题
+
+知识点题量极不均（有的点 25 道，有的点 1 道），练一轮就没题了。`app/grammar_topup.py` 允许大模型**按知识点**补题，两道底线：
+
+1. **不超纲**：题干 + 选项里的实词必须落在教材词表内，超纲占比 > 20% 直接丢弃；
+2. **可判分**：过 `grammar.validate_item`（填空必须有且只有一个 `___`；选择题 `answer` 必须在 `options` 里），知识点强制归到目标点，并与题库现有题干去重。
+
+三个入口：
+
+```bash
+python scripts/topup_grammar.py --dry-run                 # 先看要补哪些知识点
+python scripts/topup_grammar.py --min 3 --need 4          # 不足 3 道的点各补 4 道
+python scripts/topup_grammar.py --points "第三人称单数 -s" --need 5
+```
+
+- 补题落盘 `data/gen_cache/point_*.json`，`corpus.iter_items()` 自动并入 → **能被推荐、也能被判分**；
+- 缓存用「文件名 + mtime」签名，**离线脚本补题后运行中的服务会自动感知，不用重启**；
+- 运行时会兜底：某个薄弱点一道题都排不出来时自动补一批（开关 `GRAMMAR_TOPUP_ONLINE`，默认开）。
+
+### 6.5 去重与闭环
+
+- **题号 + 文本双重排除**：`norm_text()`（小写去标点）比对，保证推荐与"定级考过的文本"不重复；
+- `next_round()` 的排除范围更广：定级卷全部题 + 之前练过的题（`seen_items`）；
+- 画像按 **`定级结果 + 全部练习结果`** 重算（`results = base + practiced`），所以练习会反过来影响下一轮推荐；
+- 报告文字只在生成报告时算一次，换组题不会重复调用大模型（`analysis` 保持首次的值，`practice` 更新）。
+
+---
+
+## 七、页面交互
+
+单页 `static/index.html`，两个 Tab（hash 路由 `#test` / `#practice`）：
+
+| 页面 | 内容 |
+| --- | --- |
+| 定级测评 `#test` | 三屏：题目区 → 报告 → 推荐练习 |
+| 练习 `#practice` | 本轮练习题（单词 / 句子 / 段落 / 语法四栏）+ 「本轮完成，换一组新题」 |
+
+操作方式：
+
+| 题型 | 操作 |
+| --- | --- |
+| 口语题（单词 / 句子 / 段落） | 点「录音」开始 → 再点一次「停止」→ **自动提交打分**（最长 30 秒自动停止，同样会提交） |
+| 选择题 | 点选项即**自动判分**，改选会重新判分 |
+| 填空题 | 填答案（或点选词快捷按钮）→ 点「提交」 |
+
+其他：每题各自保存录音（`clips[key]`，录下一题不会冲掉上一题）；`localStorage` 持久化会话与分数（刷新不丢进度，点「重新开始」清空）；报告一键复制；自动提交失败时页面保留「提交」按钮作为重试入口。
+
+---
+
+## 八、接口
+
+| 方法 | 路径 | 说明 |
+| --- | --- | --- |
+| GET | `/api/health` | 配置与运行自检（Key、题库、RAG、ffmpeg、core 熔断、`llm_last_error`） |
+| POST | `/api/session` | 组定级卷（`{student, size}`） |
+| POST | `/api/session/{sid}/item/{idx}` | 评一道口语题（`audio` / `audio_path` / `audio_url` 三选一） |
+| POST | `/api/session/{sid}/item/{idx}/answer` | 答一道语法题（JSON `{answer}`） |
+| POST | `/api/session/{sid}/item/{idx}/server-record` | 用服务端 `arecord` 录 5 秒再评（浏览器没麦克风时用） |
+| POST | `/api/session/{sid}/report` | 生成报告：文字分析 + 练习推荐 |
+| POST | `/api/session/{sid}/next-round` | 换一组新题（用全部历史重算画像） |
+| POST | `/api/practice/eval` | 练习页评一道题（口语，带 `session_id` 时结果回写会话） |
+| POST | `/api/practice/answer` | 练习页答一道语法题（同样可回写会话） |
+| POST | `/api/evaluate/{item_id}` | 单题评测（不挂会话） |
+| POST | `/api/evaluate/{item_id}/server-record` | 单题 + 服务端录音 |
+| GET | `/api/items?kind=&unit=` | 浏览题库 |
+| GET | `/api/rag/search` / `/api/rag/stats` | 教材切片检索 / 统计 |
+| GET | `/api/mcp/tools` | 列出驰声 MCP 工具 |
+| POST | `/api/mcp/stream-session` | 建流式会话，拿 `session_id` 后用 WebSocket 推实时音频 |
+| GET | `/api/audio/devices` | 服务端录音设备（`arecord -l`） |
+| GET | `/api/history` | 历史评测记录 |
+| GET | `/api/debug/convert-check` | 音频转换自检 |
+
+---
+
+## 九、目录
+
+```
+app/
+  main.py           FastAPI 路由
+  config.py         全部配置（.env / 环境变量），Key 不下发浏览器
+  session.py        会话、组卷、评测编排、报告、练习闭环（recommend_groups / next_round）
+  corpus.py         语料加载、组卷选题、推荐检索、音素匹配、知识点选题
+  scoring.py        驰声结果归一化 + 聚合画像（音素对齐 / 错误画像 / 语法画像）
+  grammar.py        语法题判分 + 知识点受控表 GRAMMAR_POINTS
+  grammar_topup.py  按知识点补题（教材词汇约束 + 本地校验 + 落盘缓存）
+  tools.py          工具链、失败降级、core 熔断
+  chivox.py         驰声 MCP 客户端
+  llm.py            大模型：报告分析 / 推荐挑题 / 题目生成（OpenAI 兼容）
+  rag.py            教材切片 BM25 检索
+  phonemes.py       音素工具（近似 G2P、音素→字母组合、错读成因与练法）
+  audio.py          音频探测/转码（16k 单声道 mp3）、录音设备
+data/
+  seed_grade7.json  教材语料（两本课本抽取）
+  grade7_corpus.json 可选：含爬取扩充后的语料（存在时优先加载）
+  parts/            教材抽取产物（词表 / 句型 / 短文 / 问答 / 语法题）
+  rag/chunks.jsonl  教材 RAG 切片
+  gen_cache/        按知识点补的语法题（运行时自动并入题库）
+  history.jsonl     评测历史
+  samples/          自带测试音频
+scripts/
+  build_corpus.py      教材抽取产物 → 语料
+  build_rag.py         PDF 切片入库（含 --ocr 扫描件 OCR）
+  extract_items.py     从 PDF 抽词表/句型等
+  gen_grammar_items.py 按单元生成语法题（教材约束 + 三重校验）
+  make_cloze.py        填空/选择题生成补充通道
+  verify_items.py      大模型复核题目质量
+  topup_grammar.py     按知识点补齐题量不足的知识点
+  check_chivox.py      探测驰声 MCP 工具可用性
+  crawl_grade7.py      词表爬虫（语料扩充）
+  _smoke_http.py       端到端自测（合成 wav 走完组卷→评测→报告）
+static/
+  index.html       单页界面
+```
+
+---
+
+## 十、运行
+
+| 类别 | 依赖 | 必需 | 说明 |
+| --- | --- | --- | --- |
+| 系统 | `poppler-utils` | ✅ | `pdftotext` / `pdftoppm`，PDF 取文本、渲染页面图 |
+| 系统 | `ffmpeg` | 推荐 | 录音（webm）→ 16k 单声道 mp3；没有时降级为原格式 |
+| Python | 3.12 | ✅ | 本项目按 3.12 编写 |
+| Python 包 | `fastapi uvicorn httpx python-multipart python-dotenv pydantic` | ✅ | 见 `requirements.txt` |
+| 密钥 | `CHIVOX_API_KEY` | ✅ | 语音评测鉴权 |
+| 密钥 | `LLM_API_KEY` | 推荐 | 报告 / 挑题 / 补题；缺省则退回规则模板 |
+| 密钥 | `VISION_API_KEY` + `VISION_MODEL` | 可选 | 扫描件 OCR |
+
+```bash
+cd demo2
+P=/home/syp71/tools/anaconda3.20241001/envs/Agent_api_CVXcodebuddy/bin
+
+$P/pip install -r requirements.txt
+cp .env.example .env                       # 填 CHIVOX_API_KEY，可选 LLM_API_KEY
+
+$P/python scripts/build_corpus.py          # 教材 → 语料
+
+$P/python -m uvicorn app.main:app --host 127.0.0.1 --port 8080
+```
+
+浏览器打开 `http://127.0.0.1:8080`（**必须用 127.0.0.1 / localhost**，否则浏览器不提供麦克风，见 FAQ）。
+
+端到端自测：合成 3 秒 wav，走完「组卷 → 评测 → 报告」，并打印链路、报告来源与推荐统计：
+
+```bash
+BASE=http://127.0.0.1:8080 $P/python scripts/_smoke_http.py   # 默认连 http://127.0.0.1:8099
+```
+
+---
+
+## 十一、配置
+
+全部配置从 `.env` 或环境变量读取（`app/config.py`），Key 不会下发到浏览器。
+
+| 变量 | 默认 | 作用 |
+| --- | --- | --- |
+| `CHIVOX_API_KEY` | — | 驰声评测鉴权，必填 |
+| `CHIVOX_MCP_URL` | `https://mcp.cloud.chivox.com` | MCP 地址（连不通可换 `mcp-global`） |
+| `CHIVOX_ACCENT` | `3` | 1 英音 / 2 美音 / 3 不区分 |
+| `CHIVOX_RANK` | `100` | 100 分制或 4 分制 |
+| `CHIVOX_TIMEOUT` | `120` | MCP 请求超时（秒） |
+| `CHIVOX_SKIP_TOOLS` | — | 跳过不可用的工具（逗号分隔），组卷时避开对应题型 |
+| `LLM_API_KEY` / `LLM_BASE_URL` / `LLM_MODEL` | — / `https://api.deepseek.com` / `deepseek-chat` | 大模型（OpenAI 兼容）；**model 与 base 必须配对** |
+| `LLM_DISABLE` | `0` | 设 `1` 全部走规则模板（秒回，但文案是模板） |
+| `RECOMMEND_USE_LLM` | `1` | 设 `0` 推荐挑题纯规则 |
+| `GRAMMAR_TOPUP_ONLINE` | `1` | 题量不足时是否允许在线补题 |
+| `LLM_REASONING_EFFORT` | `low` | 推理强度（推理模型少想更快） |
+| `LLM_TIMEOUT` / `HTTP_TIMEOUT` | `60` / `60` | 请求超时（秒） |
+| `HTTP_TRUST_ENV` | `0` | 是否沿用 shell 的 `http_proxy` 等（默认忽略，避免代理导致请求直接失败） |
+
+> `.env` 用 `override=False` 加载：**已存在的环境变量优先**，`export` 过同名变量时 `.env` 不生效。改完 `.env` 需要重启服务。
+
+---
+
+## 十二、常见问题
+
+**打不开麦克风 / `Cannot read properties of undefined (reading 'getUserMedia')`**
+`http://0.0.0.0:8080`、`http://10.x.x.x:8080` 都不是安全上下文，浏览器直接不暴露 `navigator.mediaDevices`。四种解法：
+1. 同机浏览器改用 `http://127.0.0.1:8080`；
+2. SSH 隧道：`ssh -L 8080:127.0.0.1:8080 用户@服务器`，本地访问 `http://127.0.0.1:8080`；
+3. Chrome 打开 `chrome://flags/#unsafely-treat-insecure-origin-as-secure` 把该地址加入白名单；
+4. 直接用服务端录音（下一条）。
+多机访问可起 HTTPS：
+```bash
+openssl req -x509 -newkey rsa:2048 -nodes -days 365 -subj "/CN=<服务器IP>" \
+  -keyout key.pem -out cert.pem
+$P/python -m uvicorn app.main:app --host 0.0.0.0 --port 8443 \
+  --ssl-keyfile key.pem --ssl-certfile cert.pem
+```
+
+**浏览器所在机器没有麦克风（服务器 / 远程桌面）**
+页面每题有「服务器录音 5 秒」按钮，用服务端 `arecord` 录 **这台机器** 的麦克风；`GET /api/audio/devices` 可查设备。Linux 本机若 PulseAudio 没暴露输入源（`pactl list short sources` 只有 `.monitor`）：
+```bash
+pactl set-card-profile 0 output:analog-stereo+input:analog-stereo
+# 仍不行则把 ALSA 设备挂成输入源
+pactl load-module module-alsa-source device=hw:0,0
+```
+
+**评测超时 / `core is timeout` / `51000 start the core unsuccessfully` / HTTP 504**
+两个已知原因：① 音频是 wav(PCM) base64（必须用 mp3，项目已自动转换，先确认本机有 `ffmpeg`）；② `en_semi_open_eval` 的 `ref_text` 不是 JSON 字符串。用 `/api/health` 的 `cores` 看是否进了熔断冷却。
+
+**`401` / `403`**：`CHIVOX_API_KEY` 无效或过期。
+
+**报告读起来像模板句**
+说明大模型那一步降级了。看 `llm_last_error` 拿到原因：
+```bash
+curl -s localhost:8080/api/health | python3 -c "import sys,json;print(json.load(sys.stdin)['llm_last_error'] or '无调用失败')"
+```
+最常见的是 `LLM_MODEL` 与 `LLM_BASE_URL` 不匹配（模型名无效 → 400）。
+
+**推荐不出题 / 某个知识点一直重复**
+先看题库里该知识点的题量：
+```bash
+python scripts/topup_grammar.py --dry-run
+```
+题量不足就按 §6.4 补题；重复推同一个点则看它的 `last_correct`（`weak_grammar` 只收「最近一次仍做错」的点）。
+

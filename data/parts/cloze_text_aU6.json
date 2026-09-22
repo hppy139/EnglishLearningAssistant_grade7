@@ -1,0 +1,176 @@
+[
+  {
+    "kind": "cloze",
+    "text": "I think John likes strawberries ___ apples.",
+    "answer": "and",
+    "accept": [
+      "and",
+      "and"
+    ],
+    "options": [
+      "so",
+      "and",
+      "but",
+      "because"
+    ],
+    "grammar_point": "连词 and/but/because",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 and（连词 and/but/because）。",
+    "id": "aU6_c00",
+    "unit_id": "aU6",
+    "unit_name": "Unit 6 Do you like bananas?",
+    "book": "七上",
+    "source_sentence": "I think John likes strawberries and apples.",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "choice",
+    "text": "Cindy Smith, about ___ eating you like salad?",
+    "answer": "her",
+    "accept": [
+      "her",
+      "her"
+    ],
+    "options": [
+      "your",
+      "his",
+      "her",
+      "my"
+    ],
+    "grammar_point": "形容词性物主代词",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 her（形容词性物主代词）。",
+    "id": "aU6_c01",
+    "unit_id": "aU6",
+    "unit_name": "Unit 6 Do you like bananas?",
+    "book": "七上",
+    "source_sentence": "Cindy Smith, about her eating you like salad?",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "cloze",
+    "text": "Give answers that ___ true for you.",
+    "answer": "are",
+    "accept": [
+      "are",
+      "are"
+    ],
+    "options": [
+      "is",
+      "am",
+      "are"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 are（be动词 am/is/are）。",
+    "id": "aU6_c02",
+    "unit_id": "aU6",
+    "unit_name": "Unit 6 Do you like bananas?",
+    "book": "七上",
+    "source_sentence": "Give answers that are true for you.",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "choice",
+    "text": "Hey, John’s birthday dinner ___ next week.",
+    "answer": "is",
+    "accept": [
+      "is",
+      "is"
+    ],
+    "options": [
+      "am",
+      "are",
+      "is"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 is（be动词 am/is/are）。",
+    "id": "aU6_c03",
+    "unit_id": "aU6",
+    "unit_name": "Unit 6 Do you like bananas?",
+    "book": "七上",
+    "source_sentence": "Hey, John’s birthday dinner is next week.",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "cloze",
+    "text": "Let’s think about ___ food.",
+    "answer": "the",
+    "accept": [
+      "the",
+      "the"
+    ],
+    "options": [
+      "the",
+      "an",
+      "a"
+    ],
+    "grammar_point": "冠词 a/an/the",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 the（冠词 a/an/the）。",
+    "id": "aU6_c04",
+    "unit_id": "aU6",
+    "unit_name": "Unit 6 Do you like bananas?",
+    "book": "七上",
+    "source_sentence": "Let’s think about the food.",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "choice",
+    "text": "David asks the volleyball star, ___ about lunch?",
+    "answer": "What",
+    "accept": [
+      "What",
+      "what"
+    ],
+    "options": [
+      "what",
+      "who",
+      "when",
+      "where"
+    ],
+    "grammar_point": "疑问词 what/who/where/how much",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 What（疑问词 what/who/where/how much）。",
+    "id": "aU6_c05",
+    "unit_id": "aU6",
+    "unit_name": "Unit 6 Do you like bananas?",
+    "book": "七上",
+    "source_sentence": "David asks the volleyball star, What about lunch?",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "cloze",
+    "text": "___ I like I don’t eat it.",
+    "answer": "But",
+    "accept": [
+      "But",
+      "but"
+    ],
+    "options": [
+      "so",
+      "but",
+      "because",
+      "and"
+    ],
+    "grammar_point": "连词 and/but/because",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 But（连词 and/but/because）。",
+    "id": "aU6_c06",
+    "unit_id": "aU6",
+    "unit_name": "Unit 6 Do you like bananas?",
+    "book": "七上",
+    "source_sentence": "But I like I don’t eat it.",
+    "origin": "教材原句挖空（规则）",
+    "verified": false,
+    "verify_reason": "填入But后句子为“But I like I don’t eat it.”，like后缺宾语it且两句间无连词或标点，任何选项填入都无法构成通顺的句子，题目本身残缺"
+  }
+]

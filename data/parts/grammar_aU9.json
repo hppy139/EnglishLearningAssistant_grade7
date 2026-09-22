@@ -1,0 +1,73 @@
+[
+  {
+    "kind": "cloze",
+    "text": "What ___ your favorite subject?",
+    "zh": "你最喜欢的学科是什么？",
+    "answer": "is",
+    "accept": [
+      "is"
+    ],
+    "options": [
+      "am",
+      "is",
+      "are"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "hint": "主语 your favorite subject 是单数，所以 be 动词用 is。",
+    "id": "aU9_g01",
+    "unit_id": "aU9",
+    "unit_name": "Unit 9 My favorite subject is science.",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "主语your favorite subject是单数，用is，am/are均不搭配。"
+  },
+  {
+    "kind": "cloze",
+    "text": "Why ___ Bob like history?",
+    "zh": "鲍勃为什么喜欢历史？",
+    "answer": "does",
+    "accept": [
+      "does"
+    ],
+    "options": [
+      "do",
+      "does",
+      "is"
+    ],
+    "grammar_point": "一般现在时 do/does",
+    "level": 2,
+    "hint": "主语 Bob 是第三人称单数，一般现在时的疑问句要用 does。",
+    "id": "aU9_g02",
+    "unit_id": "aU9",
+    "unit_name": "Unit 9 My favorite subject is science.",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "主语Bob为第三人称单数，一般现在时疑问句用does，句子语法正确。"
+  },
+  {
+    "kind": "choice",
+    "text": "— Why do Frank and Bob like P.E.? — ___ it's fun.",
+    "zh": "——弗兰克和鲍勃为什么喜欢体育？——因为它很有趣。",
+    "answer": "Because",
+    "options": [
+      "Because",
+      "And",
+      "But",
+      "So"
+    ],
+    "grammar_point": "连词 and/but/because",
+    "level": 2,
+    "hint": "回答 why 提问时要用 because 引出原因。",
+    "id": "aU9_g03",
+    "unit_id": "aU9",
+    "unit_name": "Unit 9 My favorite subject is science.",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "accept": [],
+    "verified": true,
+    "verify_reason": "问句用Why提问，答语用Because表示原因，语义通顺；And/But/So均不合逻辑。"
+  }
+]

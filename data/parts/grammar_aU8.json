@@ -1,0 +1,51 @@
+[
+  {
+    "kind": "cloze",
+    "text": "My birthday is ___ May 2nd.",
+    "zh": "我的生日在五月二日。",
+    "answer": "on",
+    "accept": [
+      "on"
+    ],
+    "options": [
+      "in",
+      "on",
+      "at"
+    ],
+    "grammar_point": "介词 in/on/under",
+    "level": 1,
+    "hint": "具体某一天（几月几日）前面用介词 on，只有月份才用 in。",
+    "id": "aU8_g01",
+    "unit_id": "aU8",
+    "unit_name": "Unit 8 When is your birthday?",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "具体日期 May 2nd 前用介词 on，正确。"
+  },
+  {
+    "kind": "choice",
+    "text": "— When is his birthday?\n— ___ birthday is on January 17th.",
+    "zh": "——他的生日是什么时候？——他的生日在一月十七日。",
+    "answer": "His",
+    "accept": [
+      "His"
+    ],
+    "options": [
+      "He",
+      "His",
+      "Him",
+      "He's"
+    ],
+    "grammar_point": "形容词性物主代词",
+    "level": 2,
+    "hint": "birthday 是名词，前面要用形容词性物主代词 His，不能用 He、Him 或 He's。",
+    "id": "aU8_g03",
+    "unit_id": "aU8",
+    "unit_name": "Unit 8 When is your birthday?",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "修饰名词 birthday 需用形容词性物主代词 His，正确。"
+  }
+]

@@ -1,0 +1,191 @@
+[
+  {
+    "kind": "cloze",
+    "text": "___ you have a soccer ball?",
+    "answer": "Do",
+    "accept": [
+      "Do",
+      "do"
+    ],
+    "options": [],
+    "grammar_point": "一般现在时 do/does",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 Do（一般现在时 do/does）。",
+    "id": "aU5_c00",
+    "unit_id": "aU5",
+    "unit_name": "Unit 5 Do you have a soccer ball?",
+    "book": "七上",
+    "source_sentence": "Do you have a soccer ball?",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "cloze",
+    "text": "___ you have a ping-pong bat?",
+    "answer": "Do",
+    "accept": [
+      "Do",
+      "do"
+    ],
+    "options": [],
+    "grammar_point": "一般现在时 do/does",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 Do（一般现在时 do/does）。",
+    "id": "aU5_c01",
+    "unit_id": "aU5",
+    "unit_name": "Unit 5 Do you have a soccer ball?",
+    "book": "七上",
+    "source_sentence": "Do you have a ping-pong bat?",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "cloze",
+    "text": "Yes, ___ mom has a baseball bat.",
+    "answer": "my",
+    "accept": [
+      "my",
+      "my"
+    ],
+    "options": [
+      "my",
+      "her",
+      "your",
+      "his"
+    ],
+    "grammar_point": "形容词性物主代词",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 my（形容词性物主代词）。",
+    "id": "aU5_c02",
+    "unit_id": "aU5",
+    "unit_name": "Unit 5 Do you have a soccer ball?",
+    "book": "七上",
+    "source_sentence": "Yes, my mom has a baseball bat.",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "choice",
+    "text": "Yeah, ___ father has a soccer ball.",
+    "answer": "my",
+    "accept": [
+      "my",
+      "my"
+    ],
+    "options": [
+      "your",
+      "her",
+      "my",
+      "his"
+    ],
+    "grammar_point": "形容词性物主代词",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 my（形容词性物主代词）。",
+    "id": "aU5_c03",
+    "unit_id": "aU5",
+    "unit_name": "Unit 5 Do you have a soccer ball?",
+    "book": "七上",
+    "source_sentence": "Yeah, my father has a soccer ball.",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "cloze",
+    "text": "Remember the things ___ Bob’s room.",
+    "answer": "in",
+    "accept": [
+      "in",
+      "in"
+    ],
+    "options": [
+      "under",
+      "in",
+      "at",
+      "on"
+    ],
+    "grammar_point": "介词 in/on/under",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 in（介词 in/on/under）。",
+    "id": "aU5_c04",
+    "unit_id": "aU5",
+    "unit_name": "Unit 5 Do you have a soccer ball?",
+    "book": "七上",
+    "source_sentence": "Remember the things in Bob’s room.",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "choice",
+    "text": "We play Soccer ___ difficult.",
+    "answer": "is",
+    "accept": [
+      "is",
+      "is"
+    ],
+    "options": [
+      "am",
+      "are",
+      "is"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 is（be动词 am/is/are）。",
+    "id": "aU5_c05",
+    "unit_id": "aU5",
+    "unit_name": "Unit 5 Do you have a soccer ball?",
+    "book": "七上",
+    "source_sentence": "We play Soccer is difficult.",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "cloze",
+    "text": "Gina or W ___ Wang Wei.",
+    "answer": "for",
+    "accept": [
+      "for",
+      "for"
+    ],
+    "options": [
+      "for",
+      "in",
+      "on",
+      "under"
+    ],
+    "grammar_point": "介词 in/on/under",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 for（介词 in/on/under）。",
+    "id": "aU5_c06",
+    "unit_id": "aU5",
+    "unit_name": "Unit 5 Do you have a soccer ball?",
+    "book": "七上",
+    "source_sentence": "Gina or W for Wang Wei.",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "choice",
+    "text": "I have soccer balls, basketballs, volleyballs ___ baseballs.",
+    "answer": "and",
+    "accept": [
+      "and",
+      "and"
+    ],
+    "options": [
+      "so",
+      "and",
+      "because",
+      "but"
+    ],
+    "grammar_point": "连词 and/but/because",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 and（连词 and/but/because）。",
+    "id": "aU5_c07",
+    "unit_id": "aU5",
+    "unit_name": "Unit 5 Do you have a soccer ball?",
+    "book": "七上",
+    "source_sentence": "I have soccer balls, basketballs, volleyballs and baseballs.",
+    "origin": "教材原句挖空（规则）"
+  }
+]

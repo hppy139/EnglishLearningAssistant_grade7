@@ -1,0 +1,537 @@
+{
+  "unit": "aU7",
+  "book": "七上",
+  "source": "七上教材 PDF p6-89",
+  "items": [
+    {
+      "kind": "semi_open",
+      "text": "How much are these socks?",
+      "page": 60,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU7_x001",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "T-shirt these socks?",
+      "page": 60,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU7_x002",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "They’re two dollars.",
+      "page": 60,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU7_x003",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I like these shorts.",
+      "page": 61,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU7_x004",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Can I help you?",
+      "page": 61,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU7_x005",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I need a sweater for school.",
+      "page": 61,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU7_x006",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "What color do you want?",
+      "page": 61,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU7_x007",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "How about this one?",
+      "page": 61,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU7_x008",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It looks nice.",
+      "page": 61,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU7_x009",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "How much is it?",
+      "page": 61,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU7_x010",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’ll take it.",
+      "page": 61,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU7_x011",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’ll take two pairs.",
+      "page": 61,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU7_x012",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Here you are.",
+      "page": 61,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU7_x013",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "How much is the hat?",
+      "page": 62,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU7_x014",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "How much is this T-shirt?",
+      "page": 62,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU7_x015",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s seven dollars.",
+      "page": 62,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU7_x016",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "How much is that brown sweater?",
+      "page": 62,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU7_x017",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s eight dollars.",
+      "page": 62,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU7_x018",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "How much are those black trousers?",
+      "page": 62,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU7_x019",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "They’re nine dollars.",
+      "page": 62,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU7_x020",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "How much is the bag?",
+      "page": 62,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU7_x021",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "How much is the T-shirt?",
+      "page": 62,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU7_x022",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "They’re three dollars.",
+      "page": 62,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU7_x023",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s nine dollars.",
+      "page": 62,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU7_x024",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Student B, ask questions.",
+      "page": 62,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU7_x025",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Umm, they’re three dollars.",
+      "page": 62,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU7_x026",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "How much do you think these things cost?",
+      "page": 64,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU7_x027",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Do you like sweaters?",
+      "page": 64,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU7_x028",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "And shorts are only 16!",
+      "page": 64,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU7_x029",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "How much are our jackets?",
+      "page": 64,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU7_x030",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Socks are only 2 for three pairs!",
+      "page": 64,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU7_x031",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Cool’s Clothes Store now!",
+      "page": 64,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU7_x032",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Imagine you work at Mr.",
+      "page": 64,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU7_x033",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Cool’s Clothes Store.",
+      "page": 64,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU7_x034",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Hello, I help you?",
+      "page": 64,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU7_x035",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Oh, I like this one.",
+      "page": 64,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU7_x036",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "How is it?",
+      "page": 64,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU7_x037",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s only dollars.",
+      "page": 64,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU7_x038",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’ll it.",
+      "page": 64,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU7_x039",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "And what do you need?",
+      "page": 64,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU7_x040",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Well, I need a pair of black for school.",
+      "page": 64,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU7_x041",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "What about this pair?",
+      "page": 64,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU7_x042",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "And do you have shorts, too?",
+      "page": 64,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU7_x043",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Yes, our shorts are only dollars.",
+      "page": 64,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU7_x044",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "We have for only yuan.",
+      "page": 65,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU7_x045",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "And red are yuan.",
+      "page": 65,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU7_x046",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Come to our store now!",
+      "page": 65,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU7_x047",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’ll take them.",
+      "page": 65,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU7_x048",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’m sorry.",
+      "page": 65,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU7_x049",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "We don’t sell bags.",
+      "page": 65,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU7_x050",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "How much are they?",
+      "page": 65,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU7_x051",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Do you sell bags?",
+      "page": 65,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU7_x052",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "They’re twenty-five dollars.",
+      "page": 65,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU7_x053",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    }
+  ]
+}

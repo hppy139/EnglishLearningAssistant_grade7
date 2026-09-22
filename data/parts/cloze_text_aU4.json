@@ -1,0 +1,193 @@
+[
+  {
+    "kind": "cloze",
+    "text": "___ the keys on the sofa?",
+    "answer": "Are",
+    "accept": [
+      "Are",
+      "are"
+    ],
+    "options": [
+      "is",
+      "am",
+      "are"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 Are（be动词 am/is/are）。",
+    "id": "aU4_c00",
+    "unit_id": "aU4",
+    "unit_name": "Unit 4 Where's my schoolbag?",
+    "book": "七上",
+    "source_sentence": "Are the keys on the sofa?",
+    "origin": "教材原句挖空（规则）",
+    "verified": true,
+    "verify_reason": "复数主语 the keys 构成一般疑问句需用 Are 置于句首，首字母大写正确。"
+  },
+  {
+    "kind": "choice",
+    "text": "They’re ___ the sofa.",
+    "answer": "on",
+    "accept": [
+      "on",
+      "on"
+    ],
+    "options": [
+      "at",
+      "on",
+      "under",
+      "in"
+    ],
+    "grammar_point": "介词 in/on/under",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 on（介词 in/on/under）。",
+    "id": "aU4_c01",
+    "unit_id": "aU4",
+    "unit_name": "Unit 4 Where's my schoolbag?",
+    "book": "七上",
+    "source_sentence": "They’re on the sofa.",
+    "origin": "教材原句挖空（规则）",
+    "verified": true,
+    "verify_reason": "They're on the sofa 语法正确、语义通顺，on 为最佳选项。"
+  },
+  {
+    "kind": "cloze",
+    "text": "The English books ___ under the radio.",
+    "answer": "are",
+    "accept": [
+      "are",
+      "are"
+    ],
+    "options": [
+      "is",
+      "am",
+      "are"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 are（be动词 am/is/are）。",
+    "id": "aU4_c02",
+    "unit_id": "aU4",
+    "unit_name": "Unit 4 Where's my schoolbag?",
+    "book": "七上",
+    "source_sentence": "The English books are under the radio.",
+    "origin": "教材原句挖空（规则）",
+    "verified": true,
+    "verify_reason": "主语 The English books 为复数，be 动词用 are，语法正确。"
+  },
+  {
+    "kind": "cloze",
+    "text": "___ you have these things?",
+    "answer": "Do",
+    "accept": [
+      "Do",
+      "do"
+    ],
+    "options": [],
+    "grammar_point": "一般现在时 do/does",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 Do（一般现在时 do/does）。",
+    "id": "aU4_c03",
+    "unit_id": "aU4",
+    "unit_name": "Unit 4 Where's my schoolbag?",
+    "book": "七上",
+    "source_sentence": "Do you have these things?",
+    "origin": "教材原句挖空（规则）",
+    "verified": true,
+    "verify_reason": "主语 you 的一般现在时一般疑问句用助动词 Do，首字母大写正确，无其他可选词。"
+  },
+  {
+    "kind": "cloze",
+    "text": "We’re here, ___ you’re there.",
+    "answer": "and",
+    "accept": [
+      "and",
+      "and"
+    ],
+    "options": [
+      "and",
+      "so",
+      "but",
+      "because"
+    ],
+    "grammar_point": "连词 and/but/because",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 and（连词 and/but/because）。",
+    "id": "aU4_c04",
+    "unit_id": "aU4",
+    "unit_name": "Unit 4 Where's my schoolbag?",
+    "book": "七上",
+    "source_sentence": "We’re here, and you’re there.",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "choice",
+    "text": "Please let ___ little brother play.",
+    "answer": "your",
+    "accept": [
+      "your",
+      "your"
+    ],
+    "options": [
+      "his",
+      "her",
+      "my",
+      "your"
+    ],
+    "grammar_point": "形容词性物主代词",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 your（形容词性物主代词）。",
+    "id": "aU4_c05",
+    "unit_id": "aU4",
+    "unit_name": "Unit 4 Where's my schoolbag?",
+    "book": "七上",
+    "source_sentence": "Please let your little brother play.",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "cloze",
+    "text": "You ___ play soccer, I think.",
+    "answer": "can",
+    "accept": [
+      "can",
+      "can"
+    ],
+    "options": [],
+    "grammar_point": "情态动词 can",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 can（情态动词 can）。",
+    "id": "aU4_c06",
+    "unit_id": "aU4",
+    "unit_name": "Unit 4 Where's my schoolbag?",
+    "book": "七上",
+    "source_sentence": "You can play soccer, I think.",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "cloze",
+    "text": "___ you go with us?",
+    "answer": "Can",
+    "accept": [
+      "Can",
+      "can"
+    ],
+    "options": [],
+    "grammar_point": "情态动词 can",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 Can（情态动词 can）。",
+    "id": "aU4_c07",
+    "unit_id": "aU4",
+    "unit_name": "Unit 4 Where's my schoolbag?",
+    "book": "七上",
+    "source_sentence": "Can you go with us?",
+    "origin": "教材原句挖空（规则）"
+  }
+]

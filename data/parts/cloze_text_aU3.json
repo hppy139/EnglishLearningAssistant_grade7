@@ -1,0 +1,147 @@
+[
+  {
+    "kind": "cloze",
+    "text": "And ___ this his green pen?",
+    "answer": "is",
+    "accept": [
+      "is",
+      "is"
+    ],
+    "options": [
+      "is",
+      "am",
+      "are"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 is（be动词 am/is/are）。",
+    "id": "aU3_c00",
+    "unit_id": "aU3",
+    "unit_name": "Unit 3 Is this your pencil?",
+    "book": "七上",
+    "source_sentence": "And is this his green pen?",
+    "origin": "教材原句挖空（规则）",
+    "verified": true,
+    "verify_reason": "填入 is 后为“And is this his green pen?”，主语 this 与 is 搭配正确，其余选项均不能与 this 搭配。"
+  },
+  {
+    "kind": "choice",
+    "text": "Thank you ___ your help, Anna.",
+    "answer": "for",
+    "accept": [
+      "for",
+      "for"
+    ],
+    "options": [
+      "under",
+      "in",
+      "for",
+      "on"
+    ],
+    "grammar_point": "介词 in/on/under",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 for（介词 in/on/under）。",
+    "id": "aU3_c01",
+    "unit_id": "aU3",
+    "unit_name": "Unit 3 Is this your pencil?",
+    "book": "七上",
+    "source_sentence": "Thank you for your help, Anna.",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "cloze",
+    "text": "The blue pen ___ his.",
+    "answer": "is",
+    "accept": [
+      "is",
+      "is"
+    ],
+    "options": [
+      "are",
+      "is",
+      "am"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 is（be动词 am/is/are）。",
+    "id": "aU3_c02",
+    "unit_id": "aU3",
+    "unit_name": "Unit 3 Is this your pencil?",
+    "book": "七上",
+    "source_sentence": "The blue pen is his.",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "choice",
+    "text": "___ mine./No, it isn’t.",
+    "answer": "Its",
+    "accept": [
+      "Its",
+      "its"
+    ],
+    "options": [
+      "his",
+      "its",
+      "your",
+      "my"
+    ],
+    "grammar_point": "形容词性物主代词",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 Its（形容词性物主代词）。",
+    "id": "aU3_c03",
+    "unit_id": "aU3",
+    "unit_name": "Unit 3 Is this your pencil?",
+    "book": "七上",
+    "source_sentence": "It’s mine./No, it isn’t.",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "cloze",
+    "text": "How ___ you spell it?",
+    "answer": "do",
+    "accept": [
+      "do",
+      "do"
+    ],
+    "options": [],
+    "grammar_point": "一般现在时 do/does",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 do（一般现在时 do/does）。",
+    "id": "aU3_c04",
+    "unit_id": "aU3",
+    "unit_name": "Unit 3 Is this your pencil?",
+    "book": "七上",
+    "source_sentence": "How do you spell it?",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "choice",
+    "text": "I lost ___ school ID card.",
+    "answer": "my",
+    "accept": [
+      "my",
+      "my"
+    ],
+    "options": [
+      "your",
+      "his",
+      "her",
+      "my"
+    ],
+    "grammar_point": "形容词性物主代词",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 my（形容词性物主代词）。",
+    "id": "aU3_c05",
+    "unit_id": "aU3",
+    "unit_name": "Unit 3 Is this your pencil?",
+    "book": "七上",
+    "source_sentence": "I lost my school ID card.",
+    "origin": "教材原句挖空（规则）"
+  }
+]

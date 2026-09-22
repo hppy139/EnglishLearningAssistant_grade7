@@ -1,0 +1,377 @@
+{
+  "unit": "aU6",
+  "book": "七上",
+  "source": "七上教材 PDF p6-89",
+  "items": [
+    {
+      "kind": "semi_open",
+      "text": "Do you like bananas?",
+      "page": 54,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU6_x001",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Give answers that are true for you.",
+      "page": 55,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU6_x002",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Hey, John’s birthday dinner is next week.",
+      "page": 55,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU6_x003",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Let’s think about the food.",
+      "page": 55,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU6_x004",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "John likes hamburgers.",
+      "page": 55,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU6_x005",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Oh, I don’t like salad.",
+      "page": 55,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU6_x006",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Yes, you’re right.",
+      "page": 55,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU6_x007",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "What about the fruit?",
+      "page": 55,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU6_x008",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I think John likes strawberries and apples.",
+      "page": 55,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU6_x009",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Yes, I do. Give answers that are true for you. Hey, John’s birthday dinner is next week.",
+      "page": 55,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU6_x010",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Do you like salad?",
+      "page": 56,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU6_x011",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Do they like pears?",
+      "page": 56,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU6_x012",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Does she like tomatoes?",
+      "page": 56,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU6_x013",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I like oranges.",
+      "page": 56,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU6_x014",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I don’t like bananas.",
+      "page": 56,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU6_x015",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "We like rice.",
+      "page": 56,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU6_x016",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "We don’t like hamburgers.",
+      "page": 56,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU6_x017",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "He likes ice-cream.",
+      "page": 56,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU6_x018",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "He doesn’t like vegetables.",
+      "page": 56,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU6_x019",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I like fruit, but I (don’t / doesn’t) like vegetables.",
+      "page": 56,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU6_x020",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "She (like / likes) bread, but she (doesn’t / don’t) like salad.",
+      "page": 56,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU6_x021",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "He (like / likes) bananas, but he (don’t / doesn’t) like oranges.",
+      "page": 56,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU6_x022",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "We (likes / like) hamburgers, but we don’t (like / likes) chicken.",
+      "page": 56,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU6_x023",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "They (likes / like) pears, but they (don’t / doesn’t) like strawberries.",
+      "page": 56,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU6_x024",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "So, let’s get salad.",
+      "page": 56,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU6_x025",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Sally and Tom like and don’t like.",
+      "page": 57,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU6_x026",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Which food do you think is healthy?",
+      "page": 58,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU6_x027",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Sports Star Eats Well!",
+      "page": 58,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU6_x028",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "David asks the volleyball star, What about lunch?",
+      "page": 58,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU6_x029",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Cindy Smith, about her eating you like salad?",
+      "page": 58,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU6_x030",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Yes, I really like it.",
+      "page": 58,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU6_x031",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I love fruit.",
+      "page": 58,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU6_x032",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "So what fruit dinner.",
+      "page": 58,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU6_x033",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Well, I don’t ice-cream after dinner?",
+      "page": 58,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU6_x034",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "But I like I don’t eat it.",
+      "page": 58,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU6_x035",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Cindy likes healthy food.",
+      "page": 58,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU6_x036",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "David asks the volleyball star, What about lunch? Cindy Smith, about her eating you like salad? Yes, I really like it.",
+      "page": 58,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU6_x037",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    }
+  ]
+}

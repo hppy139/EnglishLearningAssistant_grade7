@@ -1,0 +1,83 @@
+[
+  {
+    "kind": "cloze",
+    "text": "The milk is on the table. ___ is white.",
+    "zh": "牛奶在桌子上。它是白色的。",
+    "answer": "It",
+    "accept": [
+      "It"
+    ],
+    "options": [
+      "It",
+      "Its",
+      "It's"
+    ],
+    "level": 1,
+    "hint": "句中缺主语，指代 milk 要用主格 It；Its 是物主代词，后面要接名词。",
+    "grammar_point": "人称代词与物主代词",
+    "id": "topup_unknown_02",
+    "origin": "大模型按知识点补题（教材约束）",
+    "book": "七上"
+  },
+  {
+    "kind": "choice",
+    "text": "These keys are ___.",
+    "zh": "这些钥匙是我们的。",
+    "answer": "ours",
+    "accept": [
+      "ours"
+    ],
+    "options": [
+      "our",
+      "ours",
+      "we"
+    ],
+    "level": 2,
+    "hint": "空格后没有名词，要用名词性物主代词 ours；our 后面必须接名词，we 是主格。",
+    "grammar_point": "人称代词与物主代词",
+    "id": "topup_unknown_03",
+    "origin": "大模型按知识点补题（教材约束）",
+    "book": "七上"
+  },
+  {
+    "kind": "cloze",
+    "text": "Where are the ___?",
+    "zh": "书在哪里？",
+    "answer": "books",
+    "accept": [
+      "books"
+    ],
+    "options": [
+      "book",
+      "books",
+      "bookes"
+    ],
+    "level": 1,
+    "hint": "are 说明主语是复数，book 的复数是 books。",
+    "grammar_point": "名词单复数",
+    "id": "topup_unknown_05",
+    "origin": "大模型按知识点补题（教材约束）",
+    "book": "七上"
+  },
+  {
+    "kind": "choice",
+    "text": "The two ___ are on the table.",
+    "zh": "两个盒子在桌子上。",
+    "answer": "boxes",
+    "accept": [
+      "boxes"
+    ],
+    "options": [
+      "box",
+      "boxes",
+      "boxs",
+      "boxies"
+    ],
+    "level": 2,
+    "hint": "two 后面要用复数名词，box 以 x 结尾，复数加 -es，变成 boxes。",
+    "grammar_point": "名词单复数",
+    "id": "topup_unknown_06",
+    "origin": "大模型按知识点补题（教材约束）",
+    "book": "七上"
+  }
+]

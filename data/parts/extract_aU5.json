@@ -1,0 +1,657 @@
+{
+  "unit": "aU5",
+  "book": "七上",
+  "source": "七上教材 PDF p6-89",
+  "items": [
+    {
+      "kind": "semi_open",
+      "text": "Do you have a soccer ball?",
+      "page": 48,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU5_x001",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "No, I don’t.",
+      "page": 48,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU5_x002",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Do you have a ping-pong bat?",
+      "page": 48,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU5_x003",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Yes, I do.",
+      "page": 48,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU5_x004",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Do you have a ping-pong ball?",
+      "page": 48,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU5_x005",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Do you have a soccer ball? No, I don’t. Do you have a ping-pong bat? Yes, I do. Do you have a ping-pong ball?",
+      "page": 48,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU5_x006",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Hey, Helen, let’s go!",
+      "page": 49,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU5_x007",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "We’re late!",
+      "page": 49,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU5_x008",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Do you have the baseball?",
+      "page": 49,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU5_x009",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s in my bag.",
+      "page": 49,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU5_x010",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "And where’s our baseball bat?",
+      "page": 49,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU5_x011",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Bill has it.",
+      "page": 49,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU5_x012",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Oh, no, I don’t.",
+      "page": 49,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU5_x013",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Let me get it.",
+      "page": 49,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU5_x014",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "And your hat, too!",
+      "page": 49,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU5_x015",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "OK, I have my jacket and hat.",
+      "page": 49,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU5_x016",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Let’s go!",
+      "page": 49,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU5_x017",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Do you have a baseball?",
+      "page": 50,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU5_x018",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Yes, I do./No, I don’t.",
+      "page": 50,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU5_x019",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I have a volleyball.",
+      "page": 50,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU5_x020",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I have a ping-pong ball.",
+      "page": 50,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU5_x021",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Does she have a tennis ball?",
+      "page": 50,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU5_x022",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Yes, she does./No, she doesn’t.",
+      "page": 50,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU5_x023",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "She has a baseball.",
+      "page": 50,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU5_x024",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Does he have a soccer ball?",
+      "page": 50,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU5_x025",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Yes, he does./No, he doesn’t.",
+      "page": 50,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU5_x026",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "He has two ping-pong bats.",
+      "page": 50,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU5_x027",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Do they have a basketball?",
+      "page": 50,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU5_x028",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Yes, they do./No, they don’t.",
+      "page": 50,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU5_x029",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "They have a volleyball.",
+      "page": 50,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU5_x030",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I have a Yes, he .I Well, let’s play basketball.",
+      "page": 50,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU5_x031",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Let’s play!",
+      "page": 50,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU5_x032",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "That sounds good.",
+      "page": 50,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU5_x033",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Remember the things in Bob’s room.",
+      "page": 50,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU5_x034",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Does Bob have a soccer ball?",
+      "page": 50,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU5_x035",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Yes, he does.",
+      "page": 50,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU5_x036",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Do you have a soccer ball? Do you have a baseball? Yes, I do./No, I don’t.",
+      "page": 50,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU5_x037",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "I have a ping-pong ball. Does she have a tennis ball? Yes, she does./No, she doesn’t.",
+      "page": 50,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU5_x038",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "What does Paul say about these activities?",
+      "page": 51,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU5_x039",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "You are Paul.",
+      "page": 51,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU5_x040",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Who has a soccer ball?",
+      "page": 52,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU5_x041",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Frank baseballs and bats.",
+      "page": 52,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU5_x042",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "We go to the same No, I don’t.",
+      "page": 52,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU5_x043",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "We play Soccer is difficult.",
+      "page": 52,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU5_x044",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s I like ping-pong.",
+      "page": 52,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU5_x045",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s easy for me.",
+      "page": 52,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU5_x046",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Who do you think says these sentences?",
+      "page": 52,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU5_x047",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Gina or W for Wang Wei.",
+      "page": 52,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU5_x048",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I play ping-pong with my classmates after class.",
+      "page": 52,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU5_x049",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I have soccer balls, basketballs, volleyballs and baseballs.",
+      "page": 52,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU5_x050",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My brother has a soccer ball but I don’t.",
+      "page": 52,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU5_x051",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I only watch sports on TV.",
+      "page": 52,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU5_x052",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Soccer is not easy for me.",
+      "page": 52,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU5_x053",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My brother and I are in the same school.",
+      "page": 52,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU5_x054",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Do You Have a Soccer Ball? Frank baseballs and bats. We go to the same No, I don’t.",
+      "page": 52,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU5_x055",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Exchange books with a partner.",
+      "page": 53,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU5_x056",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I don’t have a baseball, but I have a soccer ball.",
+      "page": 53,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU5_x057",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Tom has a baseball, but he doesn’t have a baseball bat.",
+      "page": 53,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU5_x058",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Yes, my mom has a baseball bat.",
+      "page": 53,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU5_x059",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Yeah, my father has a soccer ball.",
+      "page": 53,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU5_x060",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Do you have a volleyball?",
+      "page": 53,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU5_x061",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "No, she doesn’t.",
+      "page": 53,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU5_x062",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My teacher has a tennis ball.",
+      "page": 53,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU5_x063",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Do you have a soccer ball? Exchange books with a partner. I don’t have a baseball, but I have a soccer ball.",
+      "page": 53,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU5_x064",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Tom has a baseball, but he doesn’t have a baseball bat. Yes, my mom has a baseball bat. Yeah, my father has a soccer ball.",
+      "page": 53,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU5_x065",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    }
+  ]
+}

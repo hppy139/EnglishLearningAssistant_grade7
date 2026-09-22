@@ -1,0 +1,144 @@
+[
+  {
+    "kind": "cloze",
+    "text": "How much ___ these socks?",
+    "answer": "are",
+    "accept": [
+      "are",
+      "are"
+    ],
+    "options": [
+      "are",
+      "is",
+      "am"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 are（be动词 am/is/are）。",
+    "id": "aU7_c00",
+    "unit_id": "aU7",
+    "unit_name": "Unit 7 How much are these socks?",
+    "book": "七上",
+    "source_sentence": "How much are these socks?",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "cloze",
+    "text": "What color ___ you want?",
+    "answer": "do",
+    "accept": [
+      "do",
+      "do"
+    ],
+    "options": [],
+    "grammar_point": "一般现在时 do/does",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 do（一般现在时 do/does）。",
+    "id": "aU7_c01",
+    "unit_id": "aU7",
+    "unit_name": "Unit 7 How much are these socks?",
+    "book": "七上",
+    "source_sentence": "What color do you want?",
+    "origin": "教材原句挖空（规则）",
+    "verified": true,
+    "verify_reason": "主语you为第二人称，一般现在时疑问句用助动词do构成“What color do you want?”，正确"
+  },
+  {
+    "kind": "cloze",
+    "text": "How much ___ those black trousers?",
+    "answer": "are",
+    "accept": [
+      "are",
+      "are"
+    ],
+    "options": [
+      "are",
+      "is",
+      "am"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 are（be动词 am/is/are）。",
+    "id": "aU7_c02",
+    "unit_id": "aU7",
+    "unit_name": "Unit 7 How much are these socks?",
+    "book": "七上",
+    "source_sentence": "How much are those black trousers?",
+    "origin": "教材原句挖空（规则）",
+    "verified": true,
+    "verify_reason": "trousers为复数，用are构成“How much are those black trousers?”正确，is/am与复数主语不符"
+  },
+  {
+    "kind": "cloze",
+    "text": "And what ___ you need?",
+    "answer": "do",
+    "accept": [
+      "do",
+      "do"
+    ],
+    "options": [],
+    "grammar_point": "一般现在时 do/does",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 do（一般现在时 do/does）。",
+    "id": "aU7_c03",
+    "unit_id": "aU7",
+    "unit_name": "Unit 7 How much are these socks?",
+    "book": "七上",
+    "source_sentence": "And what do you need?",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "cloze",
+    "text": "Well, I need a pair ___ black for school.",
+    "answer": "of",
+    "accept": [
+      "of",
+      "of"
+    ],
+    "options": [
+      "on",
+      "of",
+      "under",
+      "in"
+    ],
+    "grammar_point": "介词 in/on/under",
+    "level": 2,
+    "zh": "",
+    "hint": "这里要用 of（介词 in/on/under）。",
+    "id": "aU7_c04",
+    "unit_id": "aU7",
+    "unit_name": "Unit 7 How much are these socks?",
+    "book": "七上",
+    "source_sentence": "Well, I need a pair of black for school.",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "choice",
+    "text": "We have ___ only yuan.",
+    "answer": "for",
+    "accept": [
+      "for",
+      "for"
+    ],
+    "options": [
+      "for",
+      "under",
+      "on",
+      "in"
+    ],
+    "grammar_point": "介词 in/on/under",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 for（介词 in/on/under）。",
+    "id": "aU7_c05",
+    "unit_id": "aU7",
+    "unit_name": "Unit 7 How much are these socks?",
+    "book": "七上",
+    "source_sentence": "We have for only yuan.",
+    "origin": "教材原句挖空（规则）"
+  }
+]

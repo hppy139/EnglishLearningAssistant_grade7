@@ -1,0 +1,63 @@
+[
+  {
+    "kind": "cloze",
+    "text": "What ___ your name?",
+    "zh": "你叫什么名字？",
+    "answer": "is",
+    "accept": [
+      "is"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "hint": "your name 是单数，What 后面用 is。",
+    "id": "aU1_g01",
+    "unit_id": "aU1",
+    "unit_name": "Unit 1 My name's Gina.",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "What is your name? 主语What为单数，be动词用is，语法和句意均正确。"
+  },
+  {
+    "kind": "choice",
+    "text": "___ is Eric.",
+    "zh": "他是埃里克。",
+    "answer": "He",
+    "options": [
+      "He",
+      "His",
+      "She",
+      "Her"
+    ],
+    "grammar_point": "人称代词与物主代词",
+    "level": 1,
+    "hint": "Eric 是男孩，句子缺少主语，用主格 He。",
+    "id": "aU1_g02",
+    "unit_id": "aU1",
+    "unit_name": "Unit 1 My name's Gina.",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "accept": [],
+    "verified": true,
+    "verify_reason": "He is Eric. 主语需用主格且Eric为男性，His/Her为物主代词不能作主语，She与Eric性别不符。"
+  },
+  {
+    "kind": "cloze",
+    "text": "What's ___ name? My name is Gina.",
+    "zh": "你叫什么名字？我叫吉娜。",
+    "answer": "your",
+    "accept": [
+      "your"
+    ],
+    "grammar_point": "形容词性物主代词",
+    "level": 1,
+    "hint": "问对方的名字，name 前用 your。",
+    "id": "aU1_g03",
+    "unit_id": "aU1",
+    "unit_name": "Unit 1 My name's Gina.",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "What's your name? 问对方姓名用形容词性物主代词your，与答语My name is Gina呼应。"
+  }
+]

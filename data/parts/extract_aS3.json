@@ -1,0 +1,27 @@
+{
+  "unit": "aS3",
+  "book": "七上",
+  "source": "七上教材 PDF p6-89",
+  "items": [
+    {
+      "kind": "semi_open",
+      "text": "What color is it?",
+      "page": 20,
+      "level": 1,
+      "quality": "strict",
+      "id": "aS3_x001",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s yellow.",
+      "page": 22,
+      "level": 2,
+      "quality": "loose",
+      "id": "aS3_x002",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "kind": "cloze",
+    "text": "What's this ___ English?",
+    "zh": "这个用英语怎么说？",
+    "answer": "in",
+    "accept": [
+      "in"
+    ],
+    "grammar_point": "介词 in/on/under",
+    "level": 1,
+    "hint": "in English 是固定搭配，表示“用英语”。",
+    "id": "aS2_g01",
+    "unit_id": "aS2",
+    "unit_name": "Starter Unit 2 What's this in English?",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "“用英语怎么说”固定表达 What's this in English? 用介词 in。"
+  },
+  {
+    "kind": "cloze",
+    "text": "It's ___ key.",
+    "zh": "它是一把钥匙。",
+    "answer": "a",
+    "accept": [
+      "a"
+    ],
+    "grammar_point": "冠词 a/an/the",
+    "level": 1,
+    "hint": "key 以辅音音素开头，用冠词 a。",
+    "id": "aS2_g02",
+    "unit_id": "aS2",
+    "unit_name": "Starter Unit 2 What's this in English?",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "key 以辅音音素 /k/ 开头，单数泛指用 a，a key 正确。"
+  },
+  {
+    "kind": "choice",
+    "text": "This ___ my sister.",
+    "zh": "这是我姐姐。",
+    "options": [
+      "am",
+      "is",
+      "are"
+    ],
+    "answer": "is",
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "hint": "this 是单数，be 动词用 is。",
+    "id": "aS2_g03",
+    "unit_id": "aS2",
+    "unit_name": "Starter Unit 2 What's this in English?",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "accept": [],
+    "verified": true,
+    "verify_reason": "主语 This 是单数，be 动词用 is，This is my sister 正确。"
+  }
+]

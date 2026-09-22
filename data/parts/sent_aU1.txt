@@ -1,0 +1,3 @@
+What's your name? Alan.|你叫什么名字？艾伦。
+Nice to meet you.|很高兴见到你。
+What's your telephone number? It's 281-9176.|你的电话号码是多少？是 281-9176。

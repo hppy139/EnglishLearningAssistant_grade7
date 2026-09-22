@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9F%97%A3%3C/text%3E%3C/svg%3E" />
+<title>七年级英语口语助手</title>
+<style>
+  :root { --bd:#dfe3e8; --pri:#2f6fed; --bg:#f6f7f9; --ok:#2fa96b; --warn:#e0a01f; --bad:#d33a2c; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:#1f2328; font:15px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif; }
+  .wrap { max-width:820px; margin:0 auto; padding:14px 14px 90px; }
+  .top { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  h1 { font-size:18px; margin:0; }
+  .tabs { display:flex; gap:6px; margin:12px 0; }
+  .tabs a { flex:1; text-align:center; padding:8px 0; border:1px solid var(--bd); border-radius:8px;
+           background:#fff; color:#333; text-decoration:none; font-size:15px; }
+  .tabs a.on { background:var(--pri); border-color:var(--pri); color:#fff; }
+  .card { background:#fff; border:1px solid var(--bd); border-radius:10px; padding:12px; margin-bottom:10px; }
+  .muted { color:#6b7280; font-size:13px; }
+  .tool { color:#9aa1a9; font-size:12px; }
+  .row { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  .q { display:flex; align-items:center; gap:10px; padding:8px 0; border-bottom:1px dashed var(--bd); flex-wrap:wrap; }
+  .q:last-child { border-bottom:none; }
+  .q .t { flex:1; min-width:0; }
+  /* 题干默认单行显示（过长可横向滚动）；长句或对话才换行 */
+  .q .en { font-size:17px; font-weight:600; white-space:nowrap; overflow-x:auto; }
+  .q .en.wrap { white-space:normal; }
+  /* 提交后的解析提示独占一行，不再把题干挤成好几行 */
+  .q [data-tip] { flex:1 1 100%; }
+  .score { min-width:52px; text-align:center; font-weight:700; border-radius:6px; padding:2px 6px; color:#fff; background:#bbb; }
+  .s-ok { background:var(--ok); } .s-warn { background:var(--warn); } .s-bad { background:var(--bad); }
+  button { font:inherit; padding:6px 12px; border-radius:7px; border:1px solid var(--pri); background:var(--pri); color:#fff; cursor:pointer; }
+  button.ghost { background:#fff; color:var(--pri); }
+  button:disabled { opacity:.45; cursor:default; }
+  .rec { width:78px; height:78px; border-radius:50%; border:none; font-size:14px; }
+  .rec.on { background:var(--bad); }
+  .bar { height:9px; background:#eceff3; border-radius:5px; overflow:hidden; margin:3px 0 9px; }
+  .bar > i { display:block; height:100%; background:var(--pri); }
+  .sec { font-weight:600; margin:14px 0 4px; }
+  input[type=text], select { font:inherit; padding:6px 8px; border:1px solid var(--bd); border-radius:7px; }
+  .hide { display:none; }
+  details summary { cursor:pointer; color:var(--pri); font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <h1>七年级英语口语助手</h1>
+    <input type="text" id="student" value="同学" style="width:110px" />
+    <span class="muted" id="health">加载中…</span>
+  </div>
+
+  <div class="tabs">
+    <a href="#test" id="tabTest" class="on">定级测评</a>
+    <a href="#practice" id="tabPractice">习题推荐</a>
+  </div>
+
+  <section id="pageTest">
+    <div class="card">
+      <div class="row">
+        <span>单词题数</span>
+        <select id="wsize"><option>3</option><option>4</option><option>5</option></select>
+        <button id="btnStart">开始定级</button>
+        <span class="muted" id="startTip"></span>
+      </div>
+      <div class="muted">共 7 题：单词 + 句子（含 1 道问答）+ 段落。点「录音」开始，再点一次「停止」即自动打分（最长 30 秒）；语法题：选择题选完自动判分，填空题填完点「提交」。</div>
+    </div>
+    <div id="quiz"></div>
+    <div class="row hide" id="quizBar">
+      <span class="muted" id="progress"></span>
+      <button id="btnReport">生成报告</button>
+    </div>
+  </section>
+
+  <section id="pagePractice" class="hide">
+    <div class="card">
+      <div class="row"><b id="planTitle">还没有测评结果</b></div>
+      <div class="muted" id="planTip">先完成定级测评，这里会按你的弱项给出练习。</div>
+    </div>
+    <div id="practice"></div>
+    <div class="card hide" id="nextRoundBar">
+      <div class="row">
+        <button id="btnNextRound">本轮完成，再来一组 →</button>
+        <span class="muted" id="nextRoundTip"></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="pageReport" class="hide">
+    <div class="card" id="reportCard"></div>
+    <div class="row">
+      <button id="btnToPractice">去练习 →</button>
+      <button class="ghost" id="btnCopy">复制报告</button>
+      <button class="ghost" id="btnRestart">重新开始</button>
+    </div>
+  </section>
+</div>
+<script>
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const KEY = 'g7_speech_v1';
+const state = { sid: null, items: [], results: {}, report: null, health: null };
+
+const loadLS = () => { try { return JSON.parse(localStorage.getItem(KEY)) || null; } catch (e) { return null; } };
+const saveLS = () => localStorage.setItem(KEY, JSON.stringify({
+  sid: state.sid, items: state.items, results: state.results, report: state.report
+}));
+
+async function api(url, opt) {
+  const r = await fetch(url, opt);
+  const data = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(data.detail || ('HTTP ' + r.status));
+  return data;
+}
+const fmt = (v) => (v == null || isNaN(v) ? '-' : (Math.round(Number(v) * 10) / 10).toFixed(1));
+const scls = (v) => (v == null ? '' : (v >= 75 ? 's-ok' : v >= 60 ? 's-warn' : 's-bad'));
+const show = (id, on) => $(id).classList.toggle('hide', !on);
+// 题干默认单行；过长或含换行（对话）才允许折行
+const wrapCls = (t) => {
+  const s = String(t || '');
+  return (s.includes('\n') || s.length > 46) ? ' wrap' : '';
+};
+
+function route() {
+  const practice = location.hash === '#practice';
+  show('pagePractice', practice);
+  show('pageTest', !practice);
+  show('pageReport', !practice && !!state.report);
+  $('tabTest').classList.toggle('on', !practice);
+  $('tabPractice').classList.toggle('on', practice);
+  if (practice) {
+    renderPractice();
+  } else {
+    // 生成报告时会把题目区隐藏，回到测评页要恢复（题目与已答分数都还在）
+    $('quiz').classList.remove('hide');
+    show('quizBar', !!(state.items && state.items.length));
+    if (state.report) showReport();
+  }
+}
+window.addEventListener('hashchange', route);
+
+/* ---------- 录音：点击开始，再点结束（自动最长 30 秒） ---------- */
+let rec = { mr: null, chunks: [], blob: null, key: null, timer: null };
+const clips = {};   // 每题各自保存录音，避免录下一题把上一题冲掉
+const canRecord = () => !!(window.isSecureContext && navigator.mediaDevices && navigator.mediaDevices.getUserMedia);
+const recording = () => !!(rec.mr && rec.mr.state === 'recording');
+
+async function startRec(key) {
+  if (recording()) return;
+  if (!canRecord()) { alert('当前页面无法录音：请用 http://127.0.0.1:8080 打开，或改用「上传 wav」'); return; }
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    const mime = MediaRecorder.isTypeSupported('audio/webm') ? 'audio/webm' : '';
+    const mr = new MediaRecorder(stream, mime ? { mimeType: mime } : undefined);
+    const t0 = Date.now();
+    rec = { mr, chunks: [], blob: null, key, timer: null };
+    mr.ondataavailable = (e) => rec.chunks.push(e.data);
+    mr.onstop = () => {
+      if (rec.timer) clearInterval(rec.timer);
+      rec.mr = null;                       // 关键：释放状态，否则后续录音被挡
+      stream.getTracks().forEach((t) => t.stop());
+      rec.blob = new Blob(rec.chunks, { type: mime || 'audio/webm' });
+      clips[key] = rec.blob;
+      const b = document.querySelector(`[data-rec="${key}"]`);
+      if (b) { b.classList.remove('on'); b.textContent = '重录'; }
+      const tip = document.querySelector(`[data-tip="${key}"]`);
+      if (tip) tip.textContent = `已录 ${((Date.now() - t0) / 1000).toFixed(1)}s，正在打分…`;
+      // 停止录音即自动提交打分；页面上保留的「提交」按钮留作失败重试
+      autoSubmitAfterRec(key);
+    };
+    mr.start();
+    const b = document.querySelector(`[data-rec="${key}"]`);
+    if (b) { b.classList.add('on'); b.textContent = '停止'; }
+    rec.timer = setInterval(() => {
+      const secs = (Date.now() - t0) / 1000;
+      const tip = document.querySelector(`[data-tip="${key}"]`);
+      if (tip) tip.textContent = `录音中 ${secs.toFixed(1)}s（再点一下结束并自动打分）`;
+      if (secs > 30) stopRec();
+    }, 200);
+  } catch (e) { alert('打不开麦克风：' + (e && e.name ? e.name : e)); }
+}
+
+function stopRec() { if (recording()) rec.mr.stop(); }
+
+function toggleRec(key) { if (recording()) stopRec(); else startRec(key); }
+
+function audioForm(key) {
+  const blob = clips[key];
+  if (!blob) throw new Error('先点「录音」键说一遍，再点一下结束');
+  const fd = new FormData();
+  fd.append('audio', blob, 'rec.webm');
+  return fd;
+}
+
+/* ---------- 自动提交 ---------- */
+// 定级页与练习页的提交按钮不同名，这里用 DOM 反查复用现成流程：
+// 自动提交只是替用户点一下「提交」，失败重试、评测中提示、状态保存都不重复实现。
+function autoSubmitAfterRec(key) {
+  const a = document.querySelector(`[data-submit="${key}"]`);
+  if (a) { a.click(); return; }
+  const b = document.querySelector(`[data-practice="${key}"]`);
+  if (b) b.click();
+}
+
+function autoSubmitAnswer(key) {
+  const a = document.querySelector(`[data-answer="${key}"]`);
+  if (a) { a.click(); return; }
+  const b = document.querySelector(`[data-practice="${key}"]`);
+  if (b) b.click();
+}
+
+/* ---------- 定级页 ---------- */
+const GROUPS = { word: '单词', sentence: '句子', paragraph: '段落', grammar: '语法' };
+// 语法题（填空 / 选择）：不录音，本地规则判分
+const isRule = (it) => it.chain === 'rule' || it.kind === 'cloze' || it.kind === 'choice';
+
+function ruleCtrl(it, key) {
+  const id = key != null ? key : it.index;
+  if (it.kind === 'choice' && Array.isArray(it.options) && it.options.length) {
+    return `<span style="display:inline-flex;gap:8px;flex-wrap:wrap">` +
+      it.options.map((o) =>
+        `<label style="white-space:nowrap"><input type="radio" name="ans_${id}" value="${esc(o)}"> ${esc(o)}</label>`
+      ).join('') + `</span>`;
+  }
+  const pick = Array.isArray(it.options) && it.options.length
+    ? `<span style="display:inline-flex;gap:4px;margin-left:4px">` +
+      it.options.map((o) =>
+        `<button class="ghost" style="padding:2px 6px" data-fill="${id}" data-val="${esc(o)}">${esc(o)}</button>`
+      ).join('') + `</span>`
+    : '';
+  return `<input type="text" data-ans="${id}" placeholder="填写答案" style="width:110px;padding:3px 6px">${pick}`;
+}
+
+function answerOf(key) {
+  const radio = document.querySelector(`input[name="ans_${key}"]:checked`);
+  if (radio) return radio.value;
+  const inp = document.querySelector(`[data-ans="${key}"]`);
+  return inp ? String(inp.value || '').trim() : '';
+}
+
+function renderQuiz() {
+  if (!state.items.length) { $('quiz').innerHTML = ''; show('quizBar', false); return; }
+  const groups = [...new Set(state.items.map((i) => i.group))];
+  $('quiz').innerHTML = groups.map((g) => {
+    const list = state.items.filter((i) => i.group === g);
+    return `<div class="card"><div class="sec">${GROUPS[g] || g} · ${list.length} 题</div>` +
+      list.map((it) => {
+        const r = state.results[it.index];
+        const rule = isRule(it);
+        const point = it.grammar_point ? ` ｜ 知识点：${esc(it.grammar_point)}` : '';
+        return `<div class="q">
+          <div class="t"><div class="en${wrapCls(it.text)}">${esc(it.text)}</div>
+            <div class="muted">${esc(it.zh || '')}${it.sample ? ' ｜ 参考：' + esc(it.sample) : ''}${point}
+              <span class="tool">${rule ? '规则判分' : esc(it.tool)}</span></div></div>
+          <span class="score ${scls(r && r.overall)}" data-score="${it.index}">${r ? fmt(r.overall) : ''}</span>
+          ${rule ? ruleCtrl(it) : `<button class="ghost" data-rec="${it.index}">录音</button>`}
+          ${rule ? `<button data-answer="${it.index}">提交</button>`
+                 : `<button data-submit="${it.index}">提交</button>`}
+          <span class="muted" data-tip="${it.index}"></span></div>`;
+      }).join('') + '</div>';
+  }).join('');
+  show('quizBar', true);
+  updateProgress();
+}
+
+async function submitItem(i) {
+  const tip = document.querySelector(`[data-tip="${i}"]`);
+  const btn = document.querySelector(`[data-submit="${i}"]`);
+  btn.disabled = true;
+  tip.textContent = '评测中…';
+  try {
+    const r = await api(`/api/session/${state.sid}/item/${i}`, { method: 'POST', body: audioForm(String(i)) });
+    state.results[i] = r;
+    saveLS();
+    const sc = document.querySelector(`[data-score="${i}"]`);
+    sc.textContent = fmt(r.overall);
+    sc.className = 'score ' + scls(r.overall);
+    tip.textContent = '完成';
+    updateProgress();
+  } catch (e) { tip.textContent = '失败：' + e.message; }
+  finally { btn.disabled = false; }
+}
+
+async function submitAnswer(i) {
+  const tip = document.querySelector(`[data-tip="${i}"]`);
+  const val = answerOf(i);
+  if (!val) { tip.textContent = '先选一个或填写答案'; return; }
+  tip.textContent = '判分中…';
+  try {
+    const r = await api(`/api/session/${state.sid}/item/${i}/answer`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ answer: val }),
+    });
+    state.results[i] = r;
+    saveLS();
+    const sc = document.querySelector(`[data-score="${i}"]`);
+    sc.textContent = fmt(r.overall);
+    sc.className = 'score ' + scls(r.overall);
+    const rule = r.rule || {};
+    tip.textContent = rule.correct ? '✅ 答对了' : (rule.hint || '答错了');
+    updateProgress();
+  } catch (e) { tip.textContent = '失败：' + e.message; }
+}
+
+function updateProgress() {
+  const n = Object.keys(state.results).length;
+  $('progress').textContent = `已完成 ${n}/${state.items.length} 题`;
+  $('btnReport').disabled = n === 0;
+}
+
+/* ---------- 报告（定级页第三屏） ---------- */
+function showReport() {
+  const r = state.report;
+  if (!r) return;
+  const a = r.analysis || {};
+  const dims = Object.entries(r.dims || {}).filter(([, v]) => v != null).map(([k, v]) =>
+    `<div><span class="muted">${esc(k)} ${fmt(v)}</span><div class="bar"><i style="width:${Math.max(0, Math.min(100, v))}%;background:${v >= 75 ? '#2fa96b' : v >= 60 ? '#e0a01f' : '#d33a2c'}"></i></div></div>`
+  ).join('');
+  const prof = r.error_profile || {};
+  const profLine = Object.keys(prof).length
+    ? Object.entries(prof).map(([k, v]) => `${esc(k)} ${v} 处`).join(' · ') : '';
+  const confLine = (r.sound_confusions || []).map((c) => `${esc(c.label)} ×${c.count}`).join('、');
+  const weakPh = (r.weak_phonemes || []).map((w) =>
+    `<div class="muted">/${esc(w.phoneme)}/ ×${w.count}${w.kinds_text ? '（' + esc(w.kinds_text) + '）' : ''}` +
+    (w.words && w.words.length ? ` 出现在 ${esc(w.words.join('、'))}` : '') +
+    (w.misread_text ? `，常读成 ${esc(w.misread_text)}` : '') +
+    `<div class="muted">怎么练：${esc(w.tip || '')}</div></div>`).join('');
+  const weakWord = (r.weak_words || []).slice(0, 5).map((w) => {
+    const tags = Object.entries(w.issues || {}).map(([k, v]) => `${esc(k)}×${v}`).join(' ');
+    return `<div class="muted">${esc(w.text)} ${fmt(w.score)}${tags ? ' — ' + tags : ''}</div>`;
+  }).join('');
+  const gramList = Object.values(r.grammar_profile || {});
+  const gramBlock = (r.grammar_score != null || gramList.length)
+    ? `<div class="sec">语法画像</div>` +
+      (r.grammar_score != null
+        ? `<div><b>语法 ${fmt(r.grammar_score)} 分</b><span class="muted">（单独统计，不计入口语总分）</span></div>` : '') +
+      (gramList.length
+        ? `<div class="muted">本次考察知识点：${gramList.map((g) => `${esc(g.point)} ${g.correct}/${g.total}`).join('、')}</div>` : '') +
+      (r.weak_grammar || []).map((g) =>
+        `<div class="muted">${esc(g.point)} 错 ${g.wrong}/${g.total} 题` +
+        (g.wrong_as && g.wrong_as.length ? `（${esc(g.wrong_as.join('、'))}）` : '') + `</div>`).join('')
+    : '';
+  $('reportCard').innerHTML =
+    `<div class="row"><b style="font-size:17px">${esc(r.student || '')} · ${fmt(r.overall)} 分</b>
+       <span class="tool">${esc(r.level || '')}</span></div>
+     <div style="margin:8px 0">${esc(a.conclusion || '')}</div>` +
+    (a.evidence || []).map((e) => `<div class="muted">· ${esc(e)}</div>`).join('') +
+    `<div style="margin-top:10px"><b>今天这样做：</b>${esc(a.action || '')}</div>
+     <div class="sec">能力维度</div>${dims}` +
+   ((profLine || weakPh)
+     ? `<div class="sec">薄弱画像</div>` +
+       (profLine ? `<div><b>${profLine}</b></div>` : '') +
+       (confLine ? `<div class="muted">典型错读：${confLine}</div>` : '') +
+       weakPh
+     : '') +
+   (weakWord ? `<div class="sec">需要巩固的词</div>${weakWord}` : '') +
+   gramBlock +
+    `<details style="margin-top:10px"><summary>详细数据</summary>` +
+    (r.per_item || []).map((p) => `<div class="muted">${esc(p.text)} — ${fmt(p.overall)} <span class="tool">${esc(p.tool)}</span></div>`).join('') +
+    `</details>`;
+  show('pageReport', true);
+  $('quiz').classList.add('hide');
+  $('quizBar').classList.add('hide');
+}
+
+function reportText() {
+  const r = state.report || {};
+  const a = r.analysis || {};
+  const dims = Object.entries(r.dims || {}).filter(([, v]) => v != null).map(([k, v]) => `${k} ${v}%`).join('，');
+  const profTxt = Object.entries(r.error_profile || {}).map(([k, v]) => `${k} ${v} 处`).join(' · ');
+  const confTxt = (r.sound_confusions || []).map((c) => `${c.label}×${c.count}`).join('、');
+  const gramTxt = r.grammar_score != null
+    ? `语法 ${fmt(r.grammar_score)} 分（${Object.values(r.grammar_profile || {}).map((g) => `${g.point} ${g.correct}/${g.total}`).join('、')}）` : '';
+  const all = [
+    ...((r.practice || {}).word || []),
+    ...((r.practice || {}).sentence || []),
+    ...((r.practice || {}).paragraph || []),
+  ];
+  return `【口语定级】${r.student || ''} ${fmt(r.overall)} 分（${r.level || ''}）\n` +
+    (profTxt ? `薄弱画像：${profTxt}${confTxt ? '；典型错读 ' + confTxt : ''}\n` : '') +
+    `维度：${dims}\n结论：${a.conclusion || ''}\n` +
+    (a.evidence || []).map((e) => `· ${e}`).join('\n') +
+    (gramTxt ? `\n${gramTxt}` : '') +
+    `\n今天这样做：${a.action || ''}\n练习：${all.map((p) => p.text).join(' / ')}`;
+}
+
+/* ---------- 练习页 ---------- */
+function renderPractice() {
+  const rep = state.report;
+  if (!rep) { $('planTitle').textContent = '还没有测评结果'; $('practice').innerHTML = ''; return; }
+  const plan = rep.practice || {};
+  const round = Number(rep.round || 0);
+  $('planTitle').textContent = `${round ? `第 ${round} 轮练习` : '首轮练习'} · 重点：${rep.weakest_dim || '发音准确'}`;
+  $('planTip').textContent = '口语题：点「录音」开始，再点一次「停止」就自动打分；语法题：选择题选完自动判分，填空题填完点「提交」。';
+  show('nextRoundBar', true);
+  $('nextRoundTip').textContent = round
+    ? `已完成 ${round} 轮；点按钮换一组新题（不会重复已练过的题）`
+    : '做完这一组后，点按钮换一组新题';
+  const groups = [['word', '单词'], ['sentence', '句子'], ['paragraph', '段落'], ['grammar', '语法']];
+  $('practice').innerHTML = groups.map(([g, label]) => {
+    const list = plan[g] || [];
+    if (!list.length) return '';
+    return `<div class="card"><div class="sec">${label} · ${list.length} 题</div>` +
+      list.map((p, k) => {
+        const key = 'p' + g + k;
+        const done = state.results['p_' + key];
+        const rule = isRule(p);
+        const point = p.point ? ` ｜ 知识点：${esc(p.point)}` : '';
+        return `<div class="q">
+          <div class="t"><div class="en${wrapCls(p.text)}">${esc(p.text)}</div>
+            <div class="muted">${esc(p.zh || '')}${p.reason ? ' ｜ ' + esc(p.reason) : ''}${point}
+              ${p.ref ? `<span class="tool">${esc(p.ref)}</span>` : ''}</div></div>
+          <span class="score ${scls(done && done.overall)}" data-score="${key}">${done ? fmt(done.overall) : ''}</span>
+          ${rule ? ruleCtrl(p, key) : `<button class="ghost" data-rec="${key}">录音</button>`}
+          <button data-practice="${key}">提交</button>
+          <span class="muted" data-tip="${key}"></span></div>`;
+      }).join('') + '</div>';
+  }).join('');
+  window.__plan = plan;
+}
+
+async function submitPractice(key) {
+  const g = key.startsWith('pword') ? 'word'
+    : key.startsWith('psentence') ? 'sentence'
+    : key.startsWith('pgrammar') ? 'grammar' : 'paragraph';
+  const idx = Number(key.replace('p' + g, ''));
+  const item = ((window.__plan || {})[g] || [])[idx];
+  const tip = document.querySelector(`[data-tip="${key}"]`);
+  if (!item) return;
+  const rule = isRule(item);
+  tip.textContent = rule ? '判分中…' : '评测中…';
+  try {
+    let r;
+    if (rule) {
+      const val = answerOf(key);
+      if (!val) { tip.textContent = '先选一个或填写答案'; return; }
+      r = await api('/api/practice/answer', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          answer: val,
+          item_id: item.id && !String(item.id).startsWith('ad_') ? item.id : null,
+          kind: item.kind || null,
+          text: item.text || null,
+          session_id: state.sid || null,      // 回写会话，供下一轮出題
+        }),
+      });
+    } else {
+      const fd = audioForm(key);
+      fd.append('kind', item.chain || (g === 'word' ? 'word' : g));
+      fd.append('text', item.text);
+      fd.append('session_id', state.sid || '');   // 同上
+      if (item.id && !String(item.id).startsWith('ad_')) fd.append('item_id', item.id);
+      r = await api('/api/practice/eval', { method: 'POST', body: fd });
+    }
+    state.results['p_' + key] = r;
+    saveLS();
+    const sc = document.querySelector(`[data-score="${key}"]`);
+    sc.textContent = fmt(r.overall);
+    sc.className = 'score ' + scls(r.overall);
+    if (rule) {
+      const ru = r.rule || {};
+      tip.textContent = ru.correct ? '✅ 答对了' : (ru.hint || '答错了');
+    } else {
+      tip.textContent = '完成';
+    }
+  } catch (e) { tip.textContent = '失败：' + e.message; }
+}
+
+async function nextRound() {
+  const btn = $('btnNextRound');
+  btn.disabled = true;
+  $('nextRoundTip').textContent = '正在换一组新题（大模型在挑题，约 10~20 秒）…';
+  try {
+    const r = await api(`/api/session/${state.sid}/next-round`, { method: 'POST' });
+    // 新一轮：清掉上一轮的练习分数，避免串台
+    Object.keys(state.results).forEach((k) => { if (k.startsWith('p_')) delete state.results[k]; });
+    state.report = {
+      ...(state.report || {}),
+      practice: r.practice,
+      round: r.round,
+      dims: r.dims,
+      overall: r.overall,
+      grammar_score: r.grammar_score,
+      weakest_dim: r.weakest_dim,
+      weak_phonemes: r.weak_phonemes,
+      weak_grammar: r.weak_grammar,
+    };
+    saveLS();
+    renderPractice();
+    $('nextRoundTip').textContent =
+      `已换到第 ${r.round} 轮（累计 ${r.answered} 题，其中练习 ${r.practiced} 题）· 新题不重复已练过的`;
+  } catch (e) {
+    $('nextRoundTip').textContent = '失败：' + e.message;
+  } finally { btn.disabled = false; }
+}
+
+/* ---------- 交互绑定 ---------- */
+document.addEventListener('click', (e) => {
+  const r = e.target.closest('[data-rec]');
+  if (r) { toggleRec(r.dataset.rec); return; }
+  const f = e.target.closest('[data-fill]');            // 选词填空：点一下填进输入框
+  if (f) {
+    const inp = document.querySelector(`[data-ans="${f.dataset.fill}"]`);
+    if (inp) inp.value = f.dataset.val;
+    return;
+  }
+  const an = e.target.closest('[data-answer]');
+  if (an) { submitAnswer(an.dataset.answer); return; }
+  const s = e.target.closest('[data-submit]');
+  if (s) { submitItem(s.dataset.submit); return; }
+  const p = e.target.closest('[data-practice]');
+  if (p) submitPractice(p.dataset.practice);
+});
+
+// 选择题：选完（含改选）立即判分。用 change 而不是 click——
+// change 只在值真正变化时触发，天然避免"重复点同一个选项重复判分"。
+document.addEventListener('change', (e) => {
+  const rd = e.target.closest('input[name^="ans_"]');
+  if (rd) autoSubmitAnswer(rd.name.slice(4));      // "ans_xxx" → "xxx"
+});
+
+async function startQuiz() {
+  const btn = $('btnStart');
+  btn.disabled = true;
+  $('startTip').textContent = '出题中…';
+  try {
+    const data = await api('/api/session', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ student: $('student').value || '同学', size: Number($('wsize').value) }),
+    });
+    state.sid = data.session_id;
+    state.items = data.items;
+    state.results = {};
+    state.report = null;
+    saveLS();
+    $('quiz').classList.remove('hide');
+    renderQuiz();
+    $('startTip').textContent = `已出 ${data.items.length} 题`;
+  } catch (e) { $('startTip').textContent = '失败：' + e.message; }
+  finally { btn.disabled = false; }
+}
+
+async function makeReport() {
+  $('btnReport').disabled = true;
+  $('progress').textContent = '生成报告中…（大模型分析，约 10~20 秒）';
+  try {
+    state.report = await api(`/api/session/${state.sid}/report`, { method: 'POST' });
+    saveLS();
+    showReport();
+    renderPractice();
+  } catch (e) { alert('生成失败：' + e.message); }
+  finally { $('btnReport').disabled = false; }
+}
+
+$('btnStart').onclick = startQuiz;
+$('btnReport').onclick = makeReport;
+$('btnToPractice').onclick = () => { location.hash = '#practice'; };
+$('btnNextRound').onclick = nextRound;
+$('btnCopy').onclick = async () => {
+  const text = reportText();
+  try { await navigator.clipboard.writeText(text); alert('报告已复制'); }
+  catch (e) { alert(text); }
+};
+$('btnRestart').onclick = () => { localStorage.removeItem(KEY); location.reload(); };
+
+async function boot() {
+  try {
+    state.health = await api('/api/health');
+    $('health').textContent = `题库 ${state.health.corpus.items} 题`;
+  } catch (e) { $('health').textContent = '后端未连接'; }
+  const saved = loadLS();
+  if (saved && saved.sid) {
+    state.sid = saved.sid;
+    state.items = saved.items || [];
+    state.results = saved.results || {};
+    state.report = saved.report || null;
+    if (state.items.length) { $('quiz').classList.remove('hide'); renderQuiz(); }
+  }
+  route();
+}
+boot();
+</script>
+</body>
+</html>
+

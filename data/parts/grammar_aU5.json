@@ -1,0 +1,74 @@
+[
+  {
+    "kind": "cloze",
+    "text": "She ___ a baseball.",
+    "zh": "她有一个棒球。",
+    "answer": "has",
+    "accept": [
+      "has"
+    ],
+    "options": [
+      "have",
+      "has",
+      "is"
+    ],
+    "grammar_point": "第三人称单数 -s",
+    "level": 1,
+    "hint": "she 是第三人称单数，动词用 has，表示“有”。",
+    "id": "aU5_g01",
+    "unit_id": "aU5",
+    "unit_name": "Unit 5 Do you have a soccer ball?",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "主语She为第三人称单数，动词用has，have/is均不符。"
+  },
+  {
+    "kind": "cloze",
+    "text": "Do they ___ a basketball?",
+    "zh": "他们有一个篮球吗？",
+    "answer": "have",
+    "accept": [
+      "have"
+    ],
+    "options": [
+      "have",
+      "has",
+      "do"
+    ],
+    "grammar_point": "一般现在时 do/does",
+    "level": 1,
+    "hint": "助动词 do 后面用动词原形 have。",
+    "id": "aU5_g02",
+    "unit_id": "aU5",
+    "unit_name": "Unit 5 Do you have a soccer ball?",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "助动词Do后须用动词原形have，“Do they have a basketball?”语法正确。"
+  },
+  {
+    "kind": "choice",
+    "text": "He has two ping-pong ___.",
+    "zh": "他有两个乒乓球拍。",
+    "answer": "bats",
+    "accept": [
+      "bats"
+    ],
+    "options": [
+      "bat",
+      "bats",
+      "a bat"
+    ],
+    "grammar_point": "名词单复数",
+    "level": 1,
+    "hint": "two 后面要用可数名词复数，bat 的复数是 bats。",
+    "id": "aU5_g03",
+    "unit_id": "aU5",
+    "unit_name": "Unit 5 Do you have a soccer ball?",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "two 后接可数名词复数，bats 正确。"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "kind": "cloze",
+    "text": "That ___ my grandfather.",
+    "zh": "那是我的祖父。",
+    "answer": "is",
+    "accept": [
+      "is"
+    ],
+    "options": [
+      "am",
+      "is",
+      "are"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "hint": "that 是单数，be 动词用 is。",
+    "id": "aU2_g01",
+    "unit_id": "aU2",
+    "unit_name": "Unit 2 This is my sister.",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "That is my grandfather 语法正确，主语That后be动词用is。"
+  },
+  {
+    "kind": "cloze",
+    "text": "___ is she? She's my sister.",
+    "zh": "她是谁？她是我姐姐。",
+    "answer": "Who",
+    "accept": [
+      "Who"
+    ],
+    "options": [
+      "Who",
+      "What",
+      "Where"
+    ],
+    "grammar_point": "疑问词 what/who/where/how much",
+    "level": 1,
+    "hint": "回答是 She's my sister，问的是人，所以用 Who。",
+    "id": "aU2_g02",
+    "unit_id": "aU2",
+    "unit_name": "Unit 2 This is my sister.",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "Who is she? 与答语 She's my sister 匹配，询问身份用Who。"
+  },
+  {
+    "kind": "choice",
+    "text": "These are my ___.",
+    "zh": "这些是我的兄弟们。",
+    "answer": "brothers",
+    "accept": [
+      "brothers"
+    ],
+    "options": [
+      "brother",
+      "brothers",
+      "brother's"
+    ],
+    "grammar_point": "名词单复数",
+    "level": 1,
+    "hint": "These are 后面接复数名词，brother 的复数是 brothers。",
+    "id": "aU2_g03",
+    "unit_id": "aU2",
+    "unit_name": "Unit 2 This is my sister.",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "These are my brothers 中主语These为复数，需用复数名词brothers。"
+  }
+]

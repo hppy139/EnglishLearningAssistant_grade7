@@ -1,0 +1,75 @@
+[
+  {
+    "kind": "cloze",
+    "text": "Is this ___ pencil? Yes, it is. It's mine.",
+    "zh": "这是你的铅笔吗？是的，它是。它是我的。",
+    "answer": "your",
+    "accept": [
+      "your"
+    ],
+    "options": [
+      "your",
+      "my",
+      "his"
+    ],
+    "grammar_point": "形容词性物主代词",
+    "level": 1,
+    "hint": "回答用 mine 说明问的是对方，所以用 your。",
+    "id": "aU3_g01",
+    "unit_id": "aU3",
+    "unit_name": "Unit 3 Is this your pencil?",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "填入 your 后为“Is this your pencil? Yes, it is. It's mine.”，对话前后一致，其余选项与 mine 矛盾或不合语境。"
+  },
+  {
+    "kind": "cloze",
+    "text": "Are these your ___?",
+    "zh": "这些是你的书吗？",
+    "answer": "books",
+    "accept": [
+      "books"
+    ],
+    "options": [
+      "book",
+      "books",
+      "a book"
+    ],
+    "grammar_point": "名词单复数",
+    "level": 1,
+    "hint": "these 是复数，名词 book 要加 -s 变成 books。",
+    "id": "aU3_g02",
+    "unit_id": "aU3",
+    "unit_name": "Unit 3 Is this your pencil?",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "填入 books 后为“Are these your books?”，与 these 的数一致，其余选项单复数错误。"
+  },
+  {
+    "kind": "choice",
+    "text": "Is that your schoolbag? No, it ___. It's his.",
+    "zh": "那是你的书包吗？不，它不是。它是他的。",
+    "answer": "isn't",
+    "accept": [
+      "isn't"
+    ],
+    "options": [
+      "isn't",
+      "aren't",
+      "not",
+      "is"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "hint": "it 是单数，否定回答用 isn't（is not）。",
+    "id": "aU3_g03",
+    "unit_id": "aU3",
+    "unit_name": "Unit 3 Is this your pencil?",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "填入 isn't 后为“No, it isn't. It's his.”，语法正确且否定回答与后文一致，其余选项均错误。"
+  }
+]

@@ -1,0 +1,76 @@
+[
+  {
+    "kind": "cloze",
+    "text": "___ is my schoolbag?",
+    "zh": "我的书包在哪里？",
+    "answer": "Where",
+    "accept": [
+      "Where",
+      "where"
+    ],
+    "options": [
+      "What",
+      "Who",
+      "Where"
+    ],
+    "grammar_point": "疑问词 what/who/where/how much",
+    "level": 1,
+    "hint": "问“在哪里”用 Where，所以这里填 Where。",
+    "id": "aU4_g01",
+    "unit_id": "aU4",
+    "unit_name": "Unit 4 Where's my schoolbag?",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "Where is my schoolbag? 询问地点，疑问词正确。"
+  },
+  {
+    "kind": "cloze",
+    "text": "Where are my books? They're ___ the sofa.",
+    "zh": "我的书在哪里？它们在沙发上。",
+    "answer": "on",
+    "accept": [
+      "on"
+    ],
+    "options": [
+      "in",
+      "on",
+      "under"
+    ],
+    "grammar_point": "介词 in/on/under",
+    "level": 1,
+    "hint": "书在沙发上面，用介词 on。",
+    "id": "aU4_g02",
+    "unit_id": "aU4",
+    "unit_name": "Unit 4 Where's my schoolbag?",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "填 on 后句子语法正确、语义通顺，符合书本在沙发上的常规表达。"
+  },
+  {
+    "kind": "choice",
+    "text": "Where ___ their keys? They're on the table.",
+    "zh": "他们的钥匙在哪里？它们在桌子上。",
+    "answer": "are",
+    "accept": [
+      "are"
+    ],
+    "options": [
+      "is",
+      "are",
+      "am",
+      "be"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "hint": "their keys 是复数，be 动词要用 are。",
+    "id": "aU4_g03",
+    "unit_id": "aU4",
+    "unit_name": "Unit 4 Where's my schoolbag?",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "主语 their keys 为复数，be 动词用 are，与答语 They're 一致；其余选项均不匹配复数主语。"
+  }
+]

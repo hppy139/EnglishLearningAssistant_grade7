@@ -1,0 +1,50 @@
+[
+  {
+    "kind": "cloze",
+    "text": "It ___ an orange.",
+    "zh": "它是一个橙子。",
+    "answer": "is",
+    "accept": [
+      "is"
+    ],
+    "options": [
+      "am",
+      "is",
+      "are"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "hint": "主语 It 是单数，所以 be 动词用 is。",
+    "id": "aS1_g01",
+    "unit_id": "aS1",
+    "unit_name": "Starter Unit 1 Good morning!",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "主语 It 后接 is，表示“它是一个橘子”，语法和意义正确。"
+  },
+  {
+    "kind": "choice",
+    "text": "It's ___ jacket.",
+    "zh": "它是一件夹克。",
+    "answer": "a",
+    "accept": [
+      "a"
+    ],
+    "options": [
+      "a",
+      "an",
+      "the"
+    ],
+    "grammar_point": "冠词 a/an/the",
+    "level": 1,
+    "hint": "jacket 以辅音音素开头，第一次提到用 a。",
+    "id": "aS1_g02",
+    "unit_id": "aS1",
+    "unit_name": "Starter Unit 1 Good morning!",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "jacket 以辅音音素 /dʒ/ 开头，首次泛指用 a，a jacket 正确。"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "kind": "cloze",
+    "text": "It's ___ jacket.",
+    "zh": "它是一件夹克。",
+    "answer": "a",
+    "accept": [
+      "a"
+    ],
+    "options": [
+      "a",
+      "an",
+      "the"
+    ],
+    "grammar_point": "冠词 a/an/the",
+    "level": 1,
+    "hint": "jacket 以辅音音素开头，单数名词前表示“一件”用 a。",
+    "id": "aS3_g01",
+    "unit_id": "aS3",
+    "unit_name": "Starter Unit 3 What color is it?",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "jacket 以辅音音素开头，表示一件夹克用 a，a jacket 正确。"
+  },
+  {
+    "kind": "cloze",
+    "text": "What's ___ in English?",
+    "zh": "这个用英语怎么说？",
+    "answer": "this",
+    "accept": [
+      "this"
+    ],
+    "options": [
+      "this",
+      "that",
+      "these",
+      "those"
+    ],
+    "grammar_point": "指示代词 this/that/these/those",
+    "level": 1,
+    "hint": "指近处的单数事物用 this，和 is 搭配。",
+    "id": "aS3_g02",
+    "unit_id": "aS3",
+    "unit_name": "Starter Unit 3 What color is it?",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": false,
+    "verify_reason": "this和that均为单数指示代词，填入后“What's this/that in English?”都语法正确，答案不唯一。"
+  },
+  {
+    "kind": "choice",
+    "text": "What color ___ it?",
+    "zh": "它是什么颜色？",
+    "answer": "is",
+    "options": [
+      "am",
+      "is",
+      "are",
+      "be"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "hint": "it 是第三人称单数，be 动词用 is。",
+    "id": "aS3_g03",
+    "unit_id": "aS3",
+    "unit_name": "Starter Unit 3 What color is it?",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "accept": [],
+    "verified": true,
+    "verify_reason": "What color is it? 主语it用is。"
+  }
+]

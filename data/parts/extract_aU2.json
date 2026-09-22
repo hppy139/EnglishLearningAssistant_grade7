@@ -1,0 +1,437 @@
+{
+  "unit": "aU2",
+  "book": "七上",
+  "source": "七上教材 PDF p6-89",
+  "items": [
+    {
+      "kind": "sentence",
+      "text": "This is my sister.",
+      "page": 30,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU2_x001",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Those are my parents.",
+      "page": 30,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU2_x002",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Who’s she?",
+      "page": 30,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU2_x003",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "She’s my sister.",
+      "page": 30,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU2_x004",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "That’s my family.",
+      "page": 30,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU2_x005",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Oh, and these are my brothers.",
+      "page": 30,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU2_x006",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "She’s Cindy.",
+      "page": 31,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU2_x007",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Who’s he?",
+      "page": 31,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU2_x008",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "He’s her father.",
+      "page": 31,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU2_x009",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Good morning, Jane.",
+      "page": 31,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU2_x010",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Good morning, Sally.",
+      "page": 31,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU2_x011",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Oh, Jane, this is my sister Kate.",
+      "page": 31,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU2_x012",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Kate, this is my friend Jane.",
+      "page": 31,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU2_x013",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Nice to meet you, Jane.",
+      "page": 31,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU2_x014",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Yes, they are.",
+      "page": 31,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU2_x015",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "And who’s he?",
+      "page": 31,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU2_x016",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "He’s my brother, Paul.",
+      "page": 31,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU2_x017",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Oh, I see.",
+      "page": 31,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU2_x018",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Well, have a good day!",
+      "page": 31,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU2_x019",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Sally/Kate: Thanks!",
+      "page": 31,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU2_x020",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Oh, Jane, this is my sister Kate. Kate, this is my friend Jane. Nice to meet you, Jane.",
+      "page": 31,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU2_x021",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "This is my friend Jane.",
+      "page": 32,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU2_x022",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "That’s my grandfather.",
+      "page": 32,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU2_x023",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "These are my brothers.",
+      "page": 32,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU2_x024",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "He’s my brother.",
+      "page": 32,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU2_x025",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Who’re they?",
+      "page": 32,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU2_x026",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "They’re my grandparents.",
+      "page": 32,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU2_x027",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "That my family.",
+      "page": 32,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU2_x028",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "That’s my mother.",
+      "page": 32,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU2_x029",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "She’s sister.",
+      "page": 32,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU2_x030",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Which picture are Jiang Tao and Tom talking about?",
+      "page": 33,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU2_x031",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Hi, I’m Jenny.",
+      "page": 34,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU2_x032",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "These are my parents, Alan and Mary.",
+      "page": 34,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU2_x033",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Bob and Eric.",
+      "page": 34,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU2_x034",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Coco is in my family, too.",
+      "page": 34,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU2_x035",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "This is my sister. Hi, I’m Jenny. These are my parents, Alan and Mary. Bob and Eric. Coco is in my family, too.",
+      "page": 34,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU2_x036",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Paul’s family.",
+      "page": 35,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU2_x037",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My name is Paul.",
+      "page": 35,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU2_x038",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Here is a photo of my family.",
+      "page": 35,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU2_x039",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Here’s a photo of my family.",
+      "page": 35,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU2_x040",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Are your parents?",
+      "page": 35,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU2_x041",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "And these my grandparents.",
+      "page": 35,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU2_x042",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Paul’s family. My name is Paul. Here is a photo of my family. Here’s a photo of my family. Are your parents?",
+      "page": 35,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU2_x043",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    }
+  ]
+}

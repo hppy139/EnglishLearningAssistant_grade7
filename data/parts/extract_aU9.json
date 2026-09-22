@@ -1,0 +1,887 @@
+{
+  "unit": "aU9",
+  "book": "七上",
+  "source": "七上教材 PDF p6-89",
+  "items": [
+    {
+      "kind": "sentence",
+      "text": "My favorite subject is science.",
+      "page": 72,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU9_x001",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "What’s your subject is science.",
+      "page": 72,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU9_x002",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "What’s your favorite subject?",
+      "page": 72,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU9_x003",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My favorite subject is art.",
+      "page": 72,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU9_x004",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "My favorite subject is science. What’s your subject is science. What’s your favorite subject? My favorite subject is art.",
+      "page": 72,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU9_x005",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My favorite subject is P.E.",
+      "page": 73,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU9_x006",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "How’s your day?",
+      "page": 73,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU9_x007",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s OK.",
+      "page": 73,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU9_x008",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I like Monday because I have P.E.",
+      "page": 73,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU9_x009",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "They’re my favorite subjects.",
+      "page": 73,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU9_x010",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "He always plays games with us.",
+      "page": 73,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU9_x011",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "That’s great!",
+      "page": 73,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU9_x012",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "But why do you like history?",
+      "page": 73,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU9_x013",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s boring.",
+      "page": 73,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU9_x014",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Oh, I think history is interesting.",
+      "page": 73,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU9_x015",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Because the next day is Saturday!",
+      "page": 73,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU9_x016",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "That’s for sure.",
+      "page": 73,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU9_x017",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I like Friday, too.",
+      "page": 73,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU9_x018",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "What’s his favorite subject?",
+      "page": 74,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU9_x019",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "His favorite subject is Chinese.",
+      "page": 74,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU9_x020",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "What’s her favorite subject?",
+      "page": 74,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU9_x021",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Her favorite subject is art.",
+      "page": 74,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU9_x022",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Why does Bob like history?",
+      "page": 74,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU9_x023",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Because it’s interesting.",
+      "page": 74,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU9_x024",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Why do Frank and Bob like P.E.?",
+      "page": 74,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU9_x025",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Because it’s fun.",
+      "page": 74,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU9_x026",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Who is your music teacher?",
+      "page": 74,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU9_x027",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My music teacher is Ms.",
+      "page": 74,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU9_x028",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "When is your geography class?",
+      "page": 74,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU9_x029",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s on Monday and Friday.",
+      "page": 74,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU9_x030",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My science teacher is Mr.",
+      "page": 74,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU9_x031",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Because history is interesting.",
+      "page": 74,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU9_x032",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Science and math.",
+      "page": 74,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU9_x033",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "His Chinese class is on Monday.",
+      "page": 74,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU9_x034",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Mary’s favorite subject is art.",
+      "page": 74,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU9_x035",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My geography teacher is Mrs.",
+      "page": 74,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU9_x036",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Name subject, Jingjing?",
+      "page": 74,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU9_x037",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Li Jingjing music It’s fun.",
+      "page": 74,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU9_x038",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Why do you like music?",
+      "page": 74,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU9_x039",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Who’s your music teacher?",
+      "page": 74,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU9_x040",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "When is the class?",
+      "page": 75,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU9_x041",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "What do you think of these subjects?",
+      "page": 76,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU9_x042",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Are Yu Mei’s ideas the same as yours?",
+      "page": 76,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU9_x043",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I am very busy on Friday.",
+      "page": 76,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU9_x044",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "At 8:00 I have math.",
+      "page": 76,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU9_x045",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It is not fun.",
+      "page": 76,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU9_x046",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "After that, I have P.E.",
+      "page": 76,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU9_x047",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It is my favorite subject.",
+      "page": 76,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU9_x048",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Wang, is great fun.",
+      "page": 76,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU9_x049",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It is really relaxing!",
+      "page": 76,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU9_x050",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "How about you?",
+      "page": 76,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU9_x051",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "When are your classes?",
+      "page": 76,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU9_x052",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "What is your favorite subject?",
+      "page": 76,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU9_x053",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "My favorite subject is science. What do you think of these subjects? Are Yu Mei’s ideas the same as yours?",
+      "page": 76,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU9_x054",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I have P.E.",
+      "page": 77,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU9_x055",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It is boring.",
+      "page": 77,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU9_x056",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "At 3:00 I have art.",
+      "page": 77,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU9_x057",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It is cool.",
+      "page": 77,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU9_x058",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Thank you for your e-mail.",
+      "page": 77,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU9_x059",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Let’s meet on Saturday.",
+      "page": 77,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU9_x060",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "OK with you?",
+      "page": 77,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU9_x061",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "I have P.E. It is boring. At 3:00 I have art. It is cool. Thank you for your e-mail.",
+      "page": 77,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU9_x062",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Your parents can come to our school.",
+      "page": 87,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU9_x063",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Can you help me?",
+      "page": 87,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU9_x064",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "You can’t do it like this!",
+      "page": 87,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU9_x065",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Today’s my day!",
+      "page": 87,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU9_x066",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "We have P.E.",
+      "page": 87,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU9_x067",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "We had a bad time that day, but the next day’s trip was pretty good.",
+      "page": 87,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU9_x068",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Wang’s English class is very interesting.",
+      "page": 87,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU9_x069",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Your parents can come to our school. Can you help me? You can’t do it like this!",
+      "page": 87,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU9_x070",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Our Chinese teacher, Mrs.",
+      "page": 88,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU9_x071",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Tom’s good fun; we all enjoy being with him.",
+      "page": 88,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU9_x072",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My classes finish at 1:50, but after that I have an art lesson for two hours.",
+      "page": 88,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU9_x073",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Classes start at 9 o’clock.",
+      "page": 88,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU9_x074",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Now, Class, please open your books to Lesson 9.",
+      "page": 88,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU9_x075",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I have a class/lesson for 45 minutes at school.",
+      "page": 88,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU9_x076",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "What about you?",
+      "page": 88,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU9_x077",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Every day, we have sports for about one hour at school.",
+      "page": 88,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU9_x078",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Our Chinese teacher, Mrs. Wang, is great fun. Tom’s good fun; we all enjoy being with him.",
+      "page": 88,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU9_x079",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "My classes finish at 1:50, but after that I have an art lesson for two hours. Classes start at 9 o’clock. Now, Class, please open your books to Lesson 9.",
+      "page": 88,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU9_x080",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "I have a class/lesson for 45 minutes at school. What about you? Every day, we have sports for about one hour at school.",
+      "page": 88,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU9_x081",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Is that OK with you?",
+      "page": 89,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU9_x082",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "They want us to come.",
+      "page": 89,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU9_x083",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I can go.",
+      "page": 89,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU9_x084",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Is it OK with you?",
+      "page": 89,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU9_x085",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Let’s eat hamburgers for lunch.",
+      "page": 89,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU9_x086",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Is this OK with you?",
+      "page": 89,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU9_x087",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Is that OK with you? They want us to come. I can go. Is it OK with you? Let’s eat hamburgers for lunch.",
+      "page": 89,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU9_x088",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    }
+  ]
+}

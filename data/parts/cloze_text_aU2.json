@@ -1,0 +1,108 @@
+[
+  {
+    "kind": "cloze",
+    "text": "Oh, Jane, this ___ my sister Kate.",
+    "answer": "is",
+    "accept": [
+      "is",
+      "is"
+    ],
+    "options": [
+      "are",
+      "am",
+      "is"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 is（be动词 am/is/are）。",
+    "id": "aU2_c00",
+    "unit_id": "aU2",
+    "unit_name": "Unit 2 This is my sister.",
+    "book": "七上",
+    "source_sentence": "Oh, Jane, this is my sister Kate.",
+    "origin": "教材原句挖空（规则）",
+    "verified": true,
+    "verify_reason": "This is my sister Kate 语法正确，介绍某人用this is。"
+  },
+  {
+    "kind": "choice",
+    "text": "Kate, this ___ my friend Jane.",
+    "answer": "is",
+    "accept": [
+      "is",
+      "is"
+    ],
+    "options": [
+      "am",
+      "are",
+      "is"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 is（be动词 am/is/are）。",
+    "id": "aU2_c01",
+    "unit_id": "aU2",
+    "unit_name": "Unit 2 This is my sister.",
+    "book": "七上",
+    "source_sentence": "Kate, this is my friend Jane.",
+    "origin": "教材原句挖空（规则）",
+    "verified": true,
+    "verify_reason": "This is my friend Jane 语法正确，主语this后be动词用is。"
+  },
+  {
+    "kind": "cloze",
+    "text": "Nice ___ meet you, Jane.",
+    "answer": "to",
+    "accept": [
+      "to",
+      "to"
+    ],
+    "options": [
+      "in",
+      "under",
+      "on",
+      "to"
+    ],
+    "grammar_point": "介词 in/on/under",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 to（介词 in/on/under）。",
+    "id": "aU2_c02",
+    "unit_id": "aU2",
+    "unit_name": "Unit 2 This is my sister.",
+    "book": "七上",
+    "source_sentence": "Nice to meet you, Jane.",
+    "origin": "教材原句挖空（规则）",
+    "verified": true,
+    "verify_reason": "填入 to 后为“Nice to meet you, Jane.”，语法正确、意思通顺，其余选项均不搭配。"
+  },
+  {
+    "kind": "choice",
+    "text": "Here’s a photo ___ my family.",
+    "answer": "of",
+    "accept": [
+      "of",
+      "of"
+    ],
+    "options": [
+      "in",
+      "under",
+      "on",
+      "of"
+    ],
+    "grammar_point": "介词 in/on/under",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 of（介词 in/on/under）。",
+    "id": "aU2_c03",
+    "unit_id": "aU2",
+    "unit_name": "Unit 2 This is my sister.",
+    "book": "七上",
+    "source_sentence": "Here’s a photo of my family.",
+    "origin": "教材原句挖空（规则）",
+    "verified": true,
+    "verify_reason": "填入 of 后为“Here’s a photo of my family.”，语法正确、意思通顺，其余选项均不合习惯。"
+  }
+]

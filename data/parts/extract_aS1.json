@@ -1,0 +1,57 @@
+{
+  "unit": "aS1",
+  "book": "七上",
+  "source": "七上教材 PDF p6-89",
+  "items": [
+    {
+      "kind": "sentence",
+      "text": "Good afternoon, Helen!",
+      "page": 14,
+      "level": 3,
+      "quality": "strict",
+      "id": "aS1_x001",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "How are you?",
+      "page": 14,
+      "level": 1,
+      "quality": "strict",
+      "id": "aS1_x002",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’m fine, thanks.",
+      "page": 14,
+      "level": 2,
+      "quality": "loose",
+      "id": "aS1_x003",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "How’re you today?",
+      "page": 78,
+      "level": 1,
+      "quality": "strict",
+      "id": "aS1_x004",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s a pillow.",
+      "page": 78,
+      "level": 2,
+      "quality": "loose",
+      "id": "aS1_x005",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    }
+  ]
+}

@@ -1,0 +1,777 @@
+{
+  "unit": "aU1",
+  "book": "七上",
+  "source": "七上教材 PDF p6-89",
+  "items": [
+    {
+      "kind": "sentence",
+      "text": "My name’s Gina.",
+      "page": 24,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x001",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My name’s I’m Jenny.",
+      "page": 24,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x002",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’m Dale.",
+      "page": 24,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x003",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’m Ms.",
+      "page": 24,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x004",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "What’s your name?",
+      "page": 24,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x005",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’m Cindy.",
+      "page": 24,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x006",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’m Jenny.",
+      "page": 24,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x007",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’m meet you!",
+      "page": 24,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x008",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Nice to meet you!",
+      "page": 24,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU1_x009",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Eric Tom Alice Bob Mike Jack Mary Ms.",
+      "page": 25,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x010",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "What’s his name?",
+      "page": 25,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x011",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "And what’s her name?",
+      "page": 25,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x012",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My name’s Linda.",
+      "page": 25,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x013",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Are you Helen?",
+      "page": 25,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU1_x014",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Yes, I am.",
+      "page": 25,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU1_x015",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Nice to meet you, Linda.",
+      "page": 25,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU1_x016",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Nice to meet you, too.",
+      "page": 25,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x017",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "She’s Jane.",
+      "page": 25,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x018",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Is he Jack?",
+      "page": 25,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU1_x019",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "No, he isn’t.",
+      "page": 25,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x020",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "His name’s Mike.",
+      "page": 25,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x021",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Alan./I’m Alan./My name’s Alan.",
+      "page": 26,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x022",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "He’s Eric./His name’s Eric.",
+      "page": 26,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x023",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "What’s her name?",
+      "page": 26,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x024",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "She’s Mary./Her name’s Mary.",
+      "page": 26,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x025",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Yes, he is./No, he isn’t.",
+      "page": 26,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x026",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Yes, I am./No, I’m not.",
+      "page": 26,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x027",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’m Gina.",
+      "page": 26,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x028",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Hi, your name?",
+      "page": 26,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU1_x029",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Nice to you, too.",
+      "page": 26,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU1_x030",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "His name’s His name’s Dale.",
+      "page": 26,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x031",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My name’s Her name’s Linda.",
+      "page": 26,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x032",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My name’s Frank.",
+      "page": 26,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x033",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "His name’s Dale.",
+      "page": 26,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x034",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Her name’s Linda.",
+      "page": 26,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x035",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "His name’s Frank.",
+      "page": 26,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x036",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My name’s Grace.",
+      "page": 26,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x037",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Tom c a.",
+      "page": 27,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x038",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Jack F name?",
+      "page": 28,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x039",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My name is Jenny Green.",
+      "page": 28,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x040",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My phone number is 281-9176.",
+      "page": 28,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU1_x041",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Her phone number is 232-4672.",
+      "page": 28,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU1_x042",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’m Dale Miller and my friend is Eric Brown.",
+      "page": 28,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU1_x043",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My telephone number is 358-6344.",
+      "page": 28,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU1_x044",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My name is Mary Brown.",
+      "page": 28,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x045",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My friend is in China.",
+      "page": 28,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU1_x046",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My phone number is 257-8900 and her number is 929-3155.",
+      "page": 28,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU1_x047",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "My phone number is 281-9176. Her phone number is 232-4672. I’m Dale Miller and my friend is Eric Brown.",
+      "page": 28,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU1_x048",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’m Chen Kang.",
+      "page": 29,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x049",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’m Grace.",
+      "page": 29,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x050",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Nice to meet you, Cindy.",
+      "page": 29,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x051",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My name’s Eric.",
+      "page": 29,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x052",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Nice to meet you, Eric.",
+      "page": 29,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x053",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’m Bill.",
+      "page": 29,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x054",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "What’s his telephone number?",
+      "page": 29,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU1_x055",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’m Alice.",
+      "page": 29,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x056",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My name’s Jenny.",
+      "page": 79,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x057",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’m your teacher.",
+      "page": 79,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU1_x058",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’m a new student.",
+      "page": 79,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU1_x059",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Your school ID card, please.",
+      "page": 79,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU1_x060",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "My name’s Gina. What’s your name? I’m Jenny. My name’s Jenny. I’m your teacher.",
+      "page": 79,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU1_x061",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Here are two nice photos of my family.",
+      "page": 80,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU1_x062",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Here are some of my friends.",
+      "page": 80,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU1_x063",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I like English.",
+      "page": 80,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU1_x064",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I’m busy this afternoon.",
+      "page": 80,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU1_x065",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "What about this evening?",
+      "page": 80,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU1_x066",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Thanks for your books.",
+      "page": 81,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU1_x067",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Can you spell it, please?",
+      "page": 81,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU1_x068",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Do you know how to spell it?",
+      "page": 81,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU1_x069",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "You can ask him for the dictionary.",
+      "page": 81,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU1_x070",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Don’t ask me for it.",
+      "page": 81,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x071",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Go and ask your father (for it).",
+      "page": 81,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU1_x072",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "E-mail me at maryg2@gfimail.com.",
+      "page": 81,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU1_x073",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Please meet me at No.",
+      "page": 81,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU1_x074",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I must find it.",
+      "page": 81,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU1_x075",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I must go now.",
+      "page": 81,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU1_x076",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Do you know how to spell it? You can ask him for the dictionary. Don’t ask me for it.",
+      "page": 81,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU1_x077",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "kind": "choice",
+    "text": "The milk ___ on the table.",
+    "zh": "牛奶在桌子上。",
+    "answer": "is",
+    "accept": [
+      "is"
+    ],
+    "options": [
+      "am",
+      "is",
+      "are"
+    ],
+    "level": 1,
+    "hint": "milk 是不可数名词，作主语时用 is。",
+    "grammar_point": "第三人称单数 -s",
+    "id": "topup_s_03",
+    "origin": "大模型按知识点补题（教材约束）",
+    "book": "七上"
+  },
+  {
+    "kind": "choice",
+    "text": "It ___ my apple.",
+    "zh": "它是我的苹果。",
+    "answer": "is",
+    "accept": [
+      "is"
+    ],
+    "options": [
+      "am",
+      "is",
+      "are"
+    ],
+    "level": 1,
+    "hint": "it 是第三人称单数，用 is。",
+    "grammar_point": "第三人称单数 -s",
+    "id": "topup_s_04",
+    "origin": "大模型按知识点补题（教材约束）",
+    "book": "七上"
+  }
+]

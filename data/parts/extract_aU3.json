@@ -1,0 +1,447 @@
+{
+  "unit": "aU3",
+  "book": "七上",
+  "source": "七上教材 PDF p6-89",
+  "items": [
+    {
+      "kind": "semi_open",
+      "text": "Is this your pencil?",
+      "page": 36,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU3_x001",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s his.",
+      "page": 36,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x002",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Are these No, they aren’t.",
+      "page": 36,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x003",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "They’re hers.",
+      "page": 36,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x004",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Yes, it is.",
+      "page": 36,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x005",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s mine.",
+      "page": 36,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x006",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "No, they aren’t.",
+      "page": 36,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x007",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "No, it isn’t.",
+      "page": 36,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x008",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Excuse me, Grace.",
+      "page": 37,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU3_x009",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Yes, thank you.",
+      "page": 37,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x010",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s hers.",
+      "page": 37,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x011",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Are these your pencils?",
+      "page": 37,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU3_x012",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "No, they’re Bob’s.",
+      "page": 37,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x013",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "And is this his green pen?",
+      "page": 37,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU3_x014",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "The blue pen is his.",
+      "page": 37,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x015",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "What about this dictionary?",
+      "page": 37,
+      "level": 3,
+      "quality": "strict",
+      "id": "aU3_x016",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s Helen’s.",
+      "page": 37,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x017",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "And the eraser?",
+      "page": 37,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU3_x018",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Is that yours?",
+      "page": 37,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU3_x019",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Thank you for your help, Anna.",
+      "page": 37,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU3_x020",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "You’re welcome.",
+      "page": 37,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU3_x021",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s mine./No, it isn’t.",
+      "page": 38,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x022",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Is this his green pen?",
+      "page": 38,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x023",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Yes, it is./No, it isn’t.",
+      "page": 38,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x024",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Is that your schoolbag?",
+      "page": 38,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU3_x025",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Are these your books?",
+      "page": 38,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x026",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Yes, they are./No, they aren’t.",
+      "page": 38,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x027",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Are those her keys?",
+      "page": 38,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x028",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "They’re mine.",
+      "page": 38,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x029",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Is your book?",
+      "page": 38,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU3_x030",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Are my pencils?",
+      "page": 38,
+      "level": 2,
+      "quality": "strict",
+      "id": "aU3_x031",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Is his ruler?",
+      "page": 38,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU3_x032",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Are her pens?",
+      "page": 38,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU3_x033",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Is this her ruler?",
+      "page": 38,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x034",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Is that Eric’s schoolbag?",
+      "page": 38,
+      "level": 3,
+      "quality": "loose",
+      "id": "aU3_x035",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Are these his pencils?",
+      "page": 38,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU3_x036",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Are those Anna’s books?",
+      "page": 38,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x037",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "You only have two guesses!",
+      "page": 38,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU3_x038",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "What’s this?",
+      "page": 39,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x039",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "How do you spell it?",
+      "page": 39,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x040",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Are they yours?",
+      "page": 40,
+      "level": 1,
+      "quality": "loose",
+      "id": "aU3_x041",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "semi_open",
+      "text": "Is this your watch?",
+      "page": 40,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU3_x042",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "I lost my school ID card.",
+      "page": 40,
+      "level": 2,
+      "quality": "loose",
+      "id": "aU3_x043",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "My is David.",
+      "page": 41,
+      "level": 1,
+      "quality": "strict",
+      "id": "aU3_x044",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+[
+  {
+    "kind": "cloze",
+    "text": "My favorite subject ___ science.",
+    "answer": "is",
+    "accept": [
+      "is",
+      "is"
+    ],
+    "options": [
+      "is",
+      "am",
+      "are"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 is（be动词 am/is/are）。",
+    "id": "aU9_c00",
+    "unit_id": "aU9",
+    "unit_name": "Unit 9 My favorite subject is science.",
+    "book": "七上",
+    "source_sentence": "My favorite subject is science.",
+    "origin": "教材原句挖空（规则）",
+    "verified": true,
+    "verify_reason": "主语My favorite subject为单数，be动词用is，句子正确。"
+  },
+  {
+    "kind": "choice",
+    "text": "My favorite subject ___ art.",
+    "answer": "is",
+    "accept": [
+      "is",
+      "is"
+    ],
+    "options": [
+      "are",
+      "is",
+      "am"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 is（be动词 am/is/are）。",
+    "id": "aU9_c01",
+    "unit_id": "aU9",
+    "unit_name": "Unit 9 My favorite subject is science.",
+    "book": "七上",
+    "source_sentence": "My favorite subject is art.",
+    "origin": "教材原句挖空（规则）",
+    "verified": true,
+    "verify_reason": "主语My favorite subject为单数，be动词用is；are/am均与主语不一致。"
+  },
+  {
+    "kind": "cloze",
+    "text": "He always plays games ___ us.",
+    "answer": "with",
+    "accept": [
+      "with",
+      "with"
+    ],
+    "options": [
+      "on",
+      "under",
+      "in",
+      "with"
+    ],
+    "grammar_point": "介词 in/on/under",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 with（介词 in/on/under）。",
+    "id": "aU9_c02",
+    "unit_id": "aU9",
+    "unit_name": "Unit 9 My favorite subject is science.",
+    "book": "七上",
+    "source_sentence": "He always plays games with us.",
+    "origin": "教材原句挖空（规则）",
+    "verified": true,
+    "verify_reason": "play games with sb.为固定搭配，with正确；on/under/in均不搭配。"
+  },
+  {
+    "kind": "cloze",
+    "text": "Why ___ you like music?",
+    "answer": "do",
+    "accept": [
+      "do",
+      "do"
+    ],
+    "options": [],
+    "grammar_point": "一般现在时 do/does",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 do（一般现在时 do/does）。",
+    "id": "aU9_c03",
+    "unit_id": "aU9",
+    "unit_name": "Unit 9 My favorite subject is science.",
+    "book": "七上",
+    "source_sentence": "Why do you like music?",
+    "origin": "教材原句挖空（规则）",
+    "verified": true,
+    "verify_reason": "主语you为第二人称，一般现在时疑问句用助动词do，句子正确。"
+  },
+  {
+    "kind": "cloze",
+    "text": "Now, Class, please open your books ___ Lesson 9.",
+    "answer": "to",
+    "accept": [
+      "to",
+      "to"
+    ],
+    "options": [
+      "in",
+      "on",
+      "under",
+      "to"
+    ],
+    "grammar_point": "介词 in/on/under",
+    "level": 2,
+    "zh": "",
+    "hint": "这里要用 to（介词 in/on/under）。",
+    "id": "aU9_c04",
+    "unit_id": "aU9",
+    "unit_name": "Unit 9 My favorite subject is science.",
+    "book": "七上",
+    "source_sentence": "Now, Class, please open your books to Lesson 9.",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "choice",
+    "text": "They’re ___ favorite subjects.",
+    "answer": "my",
+    "accept": [
+      "my",
+      "my"
+    ],
+    "options": [
+      "your",
+      "his",
+      "my",
+      "her"
+    ],
+    "grammar_point": "形容词性物主代词",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 my（形容词性物主代词）。",
+    "id": "aU9_c05",
+    "unit_id": "aU9",
+    "unit_name": "Unit 9 My favorite subject is science.",
+    "book": "七上",
+    "source_sentence": "They’re my favorite subjects.",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "cloze",
+    "text": "But why ___ you like history?",
+    "answer": "do",
+    "accept": [
+      "do",
+      "do"
+    ],
+    "options": [],
+    "grammar_point": "一般现在时 do/does",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 do（一般现在时 do/does）。",
+    "id": "aU9_c06",
+    "unit_id": "aU9",
+    "unit_name": "Unit 9 My favorite subject is science.",
+    "book": "七上",
+    "source_sentence": "But why do you like history?",
+    "origin": "教材原句挖空（规则）"
+  },
+  {
+    "kind": "choice",
+    "text": "Li Jingjing music ___ fun.",
+    "answer": "Its",
+    "accept": [
+      "Its",
+      "its"
+    ],
+    "options": [
+      "its",
+      "his",
+      "my",
+      "your"
+    ],
+    "grammar_point": "形容词性物主代词",
+    "level": 1,
+    "zh": "",
+    "hint": "这里要用 Its（形容词性物主代词）。",
+    "id": "aU9_c07",
+    "unit_id": "aU9",
+    "unit_name": "Unit 9 My favorite subject is science.",
+    "book": "七上",
+    "source_sentence": "Li Jingjing music It’s fun.",
+    "origin": "教材原句挖空（规则）"
+  }
+]

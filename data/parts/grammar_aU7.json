@@ -1,0 +1,74 @@
+[
+  {
+    "kind": "cloze",
+    "text": "How much ___ these socks?",
+    "zh": "这些袜子多少钱？",
+    "answer": "are",
+    "accept": [
+      "are"
+    ],
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "grammar_point": "be动词 am/is/are",
+    "level": 1,
+    "hint": "these socks 是复数，所以 be 动词用 are。",
+    "id": "aU7_g01",
+    "unit_id": "aU7",
+    "unit_name": "Unit 7 How much are these socks?",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "these socks为复数，用are构成“How much are these socks?”语法正确、意思通顺，is/am均与复数主语不一致"
+  },
+  {
+    "kind": "choice",
+    "text": "How much are these ___?",
+    "zh": "这些袜子多少钱？",
+    "answer": "socks",
+    "accept": [
+      "socks"
+    ],
+    "options": [
+      "sock",
+      "socks",
+      "shoe"
+    ],
+    "grammar_point": "名词单复数",
+    "level": 1,
+    "hint": "these 后面要接复数名词，socks 是复数形式。",
+    "id": "aU7_g02",
+    "unit_id": "aU7",
+    "unit_name": "Unit 7 How much are these socks?",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "“How much are these socks?”中these后须接复数名词socks，sock和shoe均为单数，与these不搭配"
+  },
+  {
+    "kind": "cloze",
+    "text": "How much ___ that brown sweater?",
+    "zh": "那件棕色毛衣多少钱？",
+    "answer": "is",
+    "accept": [
+      "is"
+    ],
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "grammar_point": "指示代词 this/that/these/those",
+    "level": 1,
+    "hint": "that brown sweater 是单数，所以 be 动词用 is。",
+    "id": "aU7_g03",
+    "unit_id": "aU7",
+    "unit_name": "Unit 7 How much are these socks?",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "主语that brown sweater为单数，用is构成“How much is that brown sweater?”正确，are/am不可用"
+  }
+]

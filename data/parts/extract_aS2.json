@@ -1,0 +1,57 @@
+{
+  "unit": "aS2",
+  "book": "七上",
+  "source": "七上教材 PDF p6-89",
+  "items": [
+    {
+      "kind": "semi_open",
+      "text": "What’s this in English?",
+      "page": 16,
+      "level": 2,
+      "quality": "loose",
+      "id": "aS2_x001",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s an orange.",
+      "page": 16,
+      "level": 2,
+      "quality": "loose",
+      "id": "aS2_x002",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "It’s a jacket.",
+      "page": 16,
+      "level": 2,
+      "quality": "loose",
+      "id": "aS2_x003",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "What’s this It’s a map.",
+      "page": 18,
+      "level": 1,
+      "quality": "loose",
+      "id": "aS2_x004",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    },
+    {
+      "kind": "sentence",
+      "text": "Spell it, please.",
+      "page": 18,
+      "level": 2,
+      "quality": "strict",
+      "id": "aS2_x005",
+      "origin": "教材正文抽取",
+      "book": "七上"
+    }
+  ]
+}

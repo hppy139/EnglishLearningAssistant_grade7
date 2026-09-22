@@ -1,0 +1,75 @@
+[
+  {
+    "kind": "cloze",
+    "text": "He ___ ice-cream.",
+    "zh": "他喜欢冰淇淋。",
+    "answer": "likes",
+    "accept": [
+      "likes"
+    ],
+    "options": [
+      "like",
+      "likes",
+      "liking"
+    ],
+    "grammar_point": "第三人称单数 -s",
+    "level": 2,
+    "hint": "主语 he 是第三人称单数，动词 like 要加 -s，所以用 likes。",
+    "id": "aU6_g01",
+    "unit_id": "aU6",
+    "unit_name": "Unit 6 Do you like bananas?",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "主语He为第三人称单数，likes作谓语正确且唯一。"
+  },
+  {
+    "kind": "cloze",
+    "text": "___ she like tomatoes?",
+    "zh": "她喜欢西红柿吗？",
+    "answer": "Does",
+    "accept": [
+      "Does",
+      "does"
+    ],
+    "options": [
+      "Do",
+      "Does",
+      "Is"
+    ],
+    "grammar_point": "一般现在时 do/does",
+    "level": 2,
+    "hint": "主语 she 是第三人称单数，一般疑问句要用 Does 开头，后面的动词用原形 like。",
+    "id": "aU6_g02",
+    "unit_id": "aU6",
+    "unit_name": "Unit 6 Do you like bananas?",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "主语she的一般现在时疑问句需用Does，且Does为唯一正确助动词。"
+  },
+  {
+    "kind": "choice",
+    "text": "I like ___ , but I don't like hamburgers.",
+    "zh": "我喜欢米饭，但我不喜欢汉堡包。",
+    "answer": "rice",
+    "accept": [
+      "rice"
+    ],
+    "options": [
+      "rice",
+      "a rice",
+      "rices"
+    ],
+    "grammar_point": "可数与不可数名词",
+    "level": 2,
+    "hint": "rice（米饭）是不可数名词，前面不能加 a，也不能加 -s 变复数。",
+    "id": "aU6_g03",
+    "unit_id": "aU6",
+    "unit_name": "Unit 6 Do you like bananas?",
+    "book": "七上",
+    "origin": "大模型生成（教材约束）",
+    "verified": true,
+    "verify_reason": "rice为不可数名词，I like rice语法正确，a rice和rices均不合适。"
+  }
+]
